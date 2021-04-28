@@ -6,6 +6,7 @@ slug: future-lines
 # image: star-night.jpg
 categories:
   - 人生
+  - 杂谈
 ---
 
 ## 两个努力的方向
