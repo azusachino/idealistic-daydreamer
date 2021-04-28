@@ -27,7 +27,7 @@ params:
 
   footer:
     since: 2021
-    customText:
+    customText: "When you truly believe in something, you are ready to go."
 
   dateFormat:
     published: Jan 02, 2006
