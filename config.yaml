@@ -15,115 +15,115 @@ googleAnalytics:
 DefaultContentLanguage: en
 
 permalinks:
-    post: /p/:slug/
-    page: /:slug/
+  post: /p/:slug/
+  page: /:slug/
 
 params:
-    mainSections:
-        - post
-    featuredImageField: image
-    rssFullContent: true
-    favicon:
+  mainSections:
+    - post
+  featuredImageField: image
+  rssFullContent: true
+  favicon:
 
-    footer:
-        since: 2021
-        customText:
+  footer:
+    since: 2021
+    customText:
 
-    dateFormat:
-        published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
+  dateFormat:
+    published: Jan 02, 2006
+    lastUpdated: Jan 02, 2006
 
-    sidebar:
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        avatar:
-            local: true
-            src: img/avatar.png
+  sidebar:
+    emoji: 🔝
+    subtitle: 相信自己，坚持学习。
+    avatar:
+      local: true
+      src: img/avatar.jpg
 
-    article:
-        math: false
-        license:
-            enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
+  article:
+    math: false
+    license:
+      enabled: true
+      default: Licensed under CC BY-NC-SA 4.0
 
-    comments:
-        enabled: true
-        provider: disqus
+  comments:
+    enabled: true
+    provider: disqus
 
-        utterances:
-            repo:
-            issueTerm: pathname
-            label:
+    utterances:
+      repo:
+      issueTerm: pathname
+      label:
 
-        remark42:
-            host:
-            site:
-            locale:
+    remark42:
+      host:
+      site:
+      locale:
 
-    widgets:
-        enabled:
-            - search
-            - archives
-            - tag-cloud
+  widgets:
+    enabled:
+      - search
+      - archives
+      - tag-cloud
 
-        archives:
-            limit: 5
+    archives:
+      limit: 5
 
-        tagCloud:
-            limit: 10
+    tagCloud:
+      limit: 10
 
+  opengraph:
+    twitter:
+      # Your Twitter username
+      site:
+
+      # Available values: summary, summary_large_image
+      card: summary_large_image
+
+  defaultImage:
     opengraph:
-        twitter:
-            # Your Twitter username
-            site:
+      enabled: false
+      local: false
+      src:
 
-            # Available values: summary, summary_large_image
-            card: summary_large_image
+  colorScheme:
+    # Display toggle
+    toggle: true
 
-    defaultImage:
-        opengraph:
-            enabled: false
-            local: false
-            src:
+    # Available values: auto, light, dark
+    default: auto
 
-    colorScheme:
-        # Display toggle
-        toggle: true
-
-        # Available values: auto, light, dark
-        default: auto
-
-    imageProcessing:
-        cover:
-            enabled: true
-        content:
-            enabled: true
+  imageProcessing:
+    cover:
+      enabled: true
+    content:
+      enabled: true
 
 ### Custom menu
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
-    main:
-        - identifier: home
-          name: Home
-          url: /
-          weight: -100
-          pre: home
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: -100
+      pre: home
 
 related:
-    includeNewer: true
-    threshold: 60
-    toLower: false
-    indices:
-        - name: tags
-          weight: 100
+  includeNewer: true
+  threshold: 60
+  toLower: false
+  indices:
+    - name: tags
+      weight: 100
 
-        - name: categories
-          weight: 200
+    - name: categories
+      weight: 200
 
 markup:
-    highlight:
-        noClasses: false
+  highlight:
+    noClasses: false
 
 ignoreErrors:
-    - "error-remote-getjson"
+  - "error-remote-getjson"
