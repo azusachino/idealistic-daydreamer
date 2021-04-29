@@ -1,9 +1,9 @@
 ---
 title: 努力的方向
 description: Why we are living in this world?
-date: 2020-04-30
+date: 2021-04-28
 slug: future-lines
-# image: star-night.jpg
+image: img/star-night.jpg
 categories:
   - 人生
   - 杂谈

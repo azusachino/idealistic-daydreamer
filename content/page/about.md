@@ -1,13 +1,13 @@
 ---
 title: About
-description: Live in the Shadow
+description: 我想要的无非是遵从自己的内心去生活。为什么竟是如此艰难呢？
 date: "2021-04-28"
 aliases:
   - about-us
   - about-hugo
   - contact
 license: CC BY-NC-ND
-lastmod: "2020-04-30"
+lastmod: "2021-04-30"
 menu:
   main:
     main: 
@@ -16,4 +16,4 @@ menu:
     pre: user
 ---
 
-有博客是一件很帅气的事情，所以我也想有所改变。
+假如我最终无法继续战斗下去，假如我放弃了，我堕落了，那么我就比那些从未战斗过的人更为恶劣。
