@@ -1,3 +1,5 @@
-# The blog
+# Idealistic Daydremer
 
-still need to modify
+## 保持初心
+
+假如我最终无法继续战斗下去，假如我放弃了，我堕落了，那么我就比那些从未战斗过的人更为恶劣。
