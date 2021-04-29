@@ -248,6 +248,12 @@ wsrep_sst_method=xtrabackup-v2
 wsrep_sst_auth="xtrabackup:changeme"
 ```
 
+#### 2. 部署其他节点
+
+通过修改上述的配置启动即可
+
+## 另外
+
 后续还会继续学习Haproxy+Keepalived，现在机器可能没那么多，没办法太HA。
 
 另外通过ETCD通信的方案也会研究一下。
