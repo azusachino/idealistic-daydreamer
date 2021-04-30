@@ -3,9 +3,10 @@ title: 记一次 Mysql 集群搭建经历
 description: 整整三天啊，太菜了。
 date: 2021-04-29
 slug: pxc-cluster
-image: img/miku.jpg
+image: img/2021/04/miku.jpg
 categories:
   - mysql
+  - exp
 ---
 
 ## 常用的两种方案
@@ -23,7 +24,7 @@ categories:
 
 PXC 集群的架构图如下：
 
-![架构图](img/pxc-struct.jpg)
+![架构图](img/2021/04/pxc-struct.jpg)
 
 ## 开始部署
 
@@ -171,7 +172,7 @@ wsrep_sst_auth="xtrabackup:pass"
 
 登录 mysql 之后，`show status like 'wsrep%';`，结果如下：
 
-![集群状态](img/pxc-status.png)
+![集群状态](img/2021/04/pxc-status.png)
 
 ### 多台机器
 
@@ -254,9 +255,9 @@ wsrep_sst_auth="xtrabackup:changeme"
 
 ## 另外
 
-后续还会继续学习Haproxy+Keepalived，现在机器可能没那么多，没办法太HA。
+后续还会继续学习 Haproxy+Keepalived，现在机器可能没那么多，没办法太 HA。
 
-另外通过ETCD通信的方案也会研究一下。
+另外通过 ETCD 通信的方案也会研究一下。
 
 ## 参考链接
 
