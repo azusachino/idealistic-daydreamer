@@ -2,7 +2,7 @@
 title: 记一次 Mysql 集群搭建经历
 description: 整整三天啊，太菜了。
 date: 2021-04-29
-slug: pxc-cluster
+slug: mysql/pxc-cluster
 image: img/2021/04/miku.jpg
 categories:
   - mysql

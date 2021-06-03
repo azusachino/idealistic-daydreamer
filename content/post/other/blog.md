@@ -2,7 +2,7 @@
 title: 记一次博客搭建经历
 description:
 date: 2021-04-30
-slug: blog-creation
+slug: other/blog-creation
 image: img/2021/04/peek.jpg
 categories:
   - exp

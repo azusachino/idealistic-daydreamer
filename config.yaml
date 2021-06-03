@@ -34,8 +34,8 @@ params:
     lastUpdated: Jan 02, 2006
 
   sidebar:
-    emoji: 🔝
-    subtitle: 相信自己，坚持学习。
+    emoji: 🎨
+    subtitle: Palette
     avatar:
       local: true
       src: img/avatar.jpg
