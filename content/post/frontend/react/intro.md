@@ -2,7 +2,7 @@
 title: React的简单实践
 description: 要是没有css，前端的门槛也不会那么高
 date: 2021-05-30
-slug: react/info
+slug: frontend/react/intro
 image: img/2021/05/snow_miku.jpg
 categories:
   - react

@@ -175,7 +175,7 @@ jobs:
 
 然后我们需要在 Github 的项目页配置 secrets，具体见下图：
 
-![github-secrets](img/2021/04/github-secrets.png)
+![github-secrets](img/2021/04/github_secrets.png)
 
 然后就可以推代码，看 actions 的执行情况了，祝好运。
 
