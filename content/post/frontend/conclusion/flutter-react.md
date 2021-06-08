@@ -3,7 +3,7 @@ title: React和Flutter的相似之处
 description: App开发
 date: 2021-06-05
 slug: frontend/conclusion/flutter-react
-image: img/2021/06/tear_drop_eclipse.jpg
+image: img/2021/06/tear-drop-eclipse.jpg
 categories:
   - flutter
   - react
@@ -20,7 +20,7 @@ categories:
 
 注意：flutter 中的`lib`对应 react 中的`src`。
 
-![src](img/2021/06/folder_layout.png)
+![src](img/2021/06/folder-layout.png)
 
 我们可以清晰看到目录结构十分相似，大致上都包括了 API 层，Service 层，View 层，状态管理(provider 和 redux)，main 入口文件。
 

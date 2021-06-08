@@ -3,7 +3,7 @@ title: Logstash配置Template的泥泞之旅
 description: 坑是踩不完的
 date: 2021-06-03
 slug: elk/logstash/template
-image: img/2021/06/poetry_cave.jpg
+image: img/2021/06/poetry-cave.jpg
 categories:
   - elk
 ---
