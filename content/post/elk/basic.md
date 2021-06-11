@@ -3,7 +3,7 @@ title: 关于LogStash的一些小结
 description: 一直在学，却总是学不会
 date: 2021-05-29
 slug: elk/logstash/basic
-image: img/2021/05/pink-sky.jpg
+image: img/2021/05/miku.jpg
 categories:
   - elk
 ---

@@ -3,7 +3,7 @@ title: React和Flutter的相似之处
 description: App开发
 date: 2021-06-05
 slug: frontend/conclusion/flutter-react
-image: img/2021/06/tear-drop-eclipse.jpg
+image: img/2021/06/miku-mix.jpg
 categories:
   - flutter
   - react
