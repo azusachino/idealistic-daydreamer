@@ -121,20 +121,23 @@ AddressEntry::AddressEntry(const std::string& name, const std::string& address,
 
 ```c++
 // 文件系统API定义
-class FileSystem {
+class FileSystem
+{
 public:
     std::size_t numDisks() const;
 };
 
-extern FileSystem tfs;  // 给外界使用的对象
+extern FileSystem tfs; // 给外界使用的对象
 
 // 用户使用
-class Directory {
+class Directory
+{
 public:
     Directory();
 };
 // 两个源文件中的对象，不确定哪一个先行初始化
-Director::Director(){
+Directory::Directory()
+{
     std::size_t disks = tfs.numDisks(); // 使用tfs对象
 }
 ```
@@ -143,26 +146,31 @@ Director::Director(){
 
 ```c++
 // 文件系统API定义
-class FileSystem {
+class FileSystemNew
+{
 public:
-    FileSystem& tfs() {
-        static FileSystem fs;
+    FileSystemNew &ntfs()
+    {
+        static FileSystemNew fs;
         return fs;
     }
     std::size_t numDisks() const;
 };
 
 // 用户使用
-class Directory {
+class DirectoryNew
+{
 public:
-    Directory();
+    DirectoryNew();
 };
 // 两个源文件中的对象，不确定哪一个先行初始化
-Director::Director() {
-    std::size_t disks = tfs().numDisks(); // 使用tfs对象
+DirectoryNew::DirectoryNew()
+{
+    std::size_t disks = ntfs().numDisks(); // 使用tfs对象
 }
-Directory& tempDir() {
-    static Directory dir;
-    return td;
+DirectoryNew &tempDir()
+{
+    static DirectoryNew dir;
+    return dir;
 }
 ```
