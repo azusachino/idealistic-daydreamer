@@ -10,7 +10,7 @@ categories:
 
 ## 了解 C++默默编写并调用哪些函数
 
-在 C++处理完一个 Empty Class 之后，会为他声明(编译器版本的)一个 copy constructor，一个 copy assignment operator 和一个析构函数。如果 Empty Class 中没有声明任何构造函数，编译器还会声明一个 default 构造函数。
+在 C++处理完一个 Empty Class 之后，会为它声明(编译器版本的)一个 copy constructor，一个 copy assignment operator 和一个析构函数。如果 Empty Class 中没有声明任何构造函数，编译器还会声明一个 default 构造函数。
 
 ```c++
 class Empty {};
