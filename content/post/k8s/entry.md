@@ -1,14 +1,14 @@
 ---
-title: K8S学习之旅01
-description: 环境配置等...
+title: K8S setup
+description: a tough start
 date: 2021-07-13
 slug: k8s/entry
 image: img/2021/07/aqua.png
 categories:
-  - k8s
+  - K8S
 ---
 
-我的**K8S 学习之旅**
+我的 **K8S 学习之旅** 01
 
 ## Kubernets 的官方定义
 
@@ -22,13 +22,13 @@ Kubernetes is a portable, extensible, open-source platform for managing containe
 
 windows 环境下，还是比较推荐使用 Chocolatey 这个包管理工具的，很多程序都可以一键安装，升级也很方便。[官网在此](https://chocolatey.org/)
 
-你也可以到[这里](https://community.chocolatey.org/packages)找 Chocolatey 支持的程序。
+你也可以到[这里](https://community.chocolatey.org/packages)查询 Chocolatey 支持的程序。
 
 注意：**`choco install`需要管理员权限。**
 
 ### 安装 Docker
 
-1. 从[Docker 官网](https://www.docker.com/products/docker-desktop)下载 exe 安装文件，自行安装即可
+1. 从[Docker 官网](https://www.docker.com/products/docker-desktop)下载安装文件，自行安装即可
 2. 或者使用 choco 安装 `choco install docker-desktop`
 
 注意：**minikube 依赖 docker 环境。**
@@ -45,7 +45,7 @@ choco list --local
 
 ## 初步上手
 
-使用`minikube start`，我们就获得了一个单节点的 kubernetes cluster 。
+使用`minikube start`，我们就获得了一个单节点的 kubernetes cluster
 
 ### 第一个应用
 
@@ -64,16 +64,16 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx # pod的元信息
+        app: nginx # pod的label
     spec:
       volumes:
         - name: nginx-vol # 定义挂载容器
-          emptyDir: {} # 自动生成的空路径，随pod自动销毁
+          emptyDir: {} # 自动生成的空路径，与Pod生命周期一致
       containers: # 定义容器内程序信息
         - name: nginx # image name
-          image: nginx:1.20.0
+          image: nginx:1.20.0 # 具体的镜像信息
           ports:
-            - containerPort: 80
+            - containerPort: 80 # 端口
           resources: # 资源限制
             limits:
               memory: "128Mi"
@@ -94,6 +94,4 @@ kubectl describe pod <pod.name>
 
 ## 总结
 
-暂时就这些吧，可以仔细看看官方这张架构图，再想想 K8S 可以解决哪些问题。
-
-![k8s](img/2021/07/components-of-kubernetes.svg)
+暂时就这样

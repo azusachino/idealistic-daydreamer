@@ -1,0 +1,147 @@
+---
+title: K8S Overview
+description: The First Sight
+date: 2021-07-29
+slug: k8s/overview
+image: img/2021/07/mia.png
+categories:
+  - K8S
+---
+
+我的 **K8S 学习之旅** 02
+
+## The progress of deployment
+
+![.](img/2021/07/container_evolution.svg)
+
+**Traditional deployment era**:
+Applications ran on physical servers.
+
+**Virtualized deployment era**:
+Virtualization allows user to run multiple Virtual Machines on a single physical server.
+
+**Container deployment era**:
+Containers are similar to VMs, but they have relaxed isolation properties to share the Operating System (OS) among the applications.
+
+## What benefits containers bring?
+
+- Agile application createion and deployment
+- Continuous development, integration and deployment
+- Dev and Ops separation of concerns
+- Observability
+- Environmental consistency across dev, test and prod
+- Cloud and OS distribution portability
+- Application-centric management
+- Loosely coupled, distributed, elastic, liberated micro-services
+- Resource isolation
+- Resource utilization
+
+## What K8S provides?
+
+- Service discovery and load balancing
+- Sotrage orchestration
+- Automated rollouts and rollbacks
+- Automatic bin packing
+- Self-healing
+- Secret and configuration management
+
+### But K8S
+
+- Does not limit the types of applications supported.
+- Does not deploy source code and does not build your application.
+- Does not provide application-level services, such as middleware, data-processing frameworks, databases, caches, nor cluster storage systems as built-in services.
+- Does not dictate logging, monitoring, or alerting solutions.
+- Does not provide nor mandate a configuration language/system.
+- Does not provide nor adopt any comprehensive machine configuration, maintenance, management, or self-healing systems.
+- Additionally, Kubernetes is not a mere orchestration system.
+
+## K8S Components
+
+K8S will always be a cluster, and have at least one worker node. The worker node(s) host the _Pods_ that are the components of the application workload. The control plane manages the worker nodes and the Pods in the cluster.
+
+![.](img/2021/07/components-of-kubernetes.svg)
+
+### Control plane Components
+
+The control plane's components make global decisions about the cluster, as well as detecting and responding to cluster events.
+
+**kube-apiserver**:
+
+The API server is a component of the Kubernetes control plane that exposes the Kubernetes API. The API server is the front end for the Kubernetes control plane.
+
+**etcd**:
+
+Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.
+
+**kube-scheduler**:
+
+Control plane component that watches for newly created Pods with no assigned node, and selects a node for them to run on.
+
+Factors taken into account for scheduling decisions include:
+
+- individual and collective resource requirements
+- hardware/software/policy constraints
+- affinity and anti-affinity specifications
+- data locality
+- inter-workload interference, and deadlines
+
+**kube-controller-manager**:
+
+Control plane component that runs controller processes.
+
+Some types of these controllers are:
+
+- Node controller: Responsible for noticing and responding when nodes go down.
+- Job controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.
+- Endpoints controller: Populates the Endpoints object (that is, joins Services & Pods).
+- Service Account & Token controllers: Create default accounts and API access tokens for new namespaces.
+
+**cloud-controller-manager**:
+
+A Kubernetes control plane component that embeds cloud-specific control logic. The cloud controller manager lets you link your cluster into your cloud provider's API, and separates out the components that interact with that cloud platform from components that only interact with your cluster.
+
+The cloud-controller-manager only runs controllers that are specific to your cloud provider. If you are running Kubernetes on your own premises, or in a learning environment inside your own PC, the cluster does not have a cloud controller manager.
+
+### Node Components
+
+Node components run on every node, maintaining running pods and providing the Kubernetes runtime environment.
+
+**kubelet**:
+
+An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.
+
+The kubelet takes a set of _PodSpecs_ that are provided through various mechanisms and ensures that the containers described in those _PodSpecs_ are running and healthy. The kubelet doesn't manage containers which were not created by Kubernetes.
+
+**kube-proxy**:
+
+kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes _Service_ concept.
+
+kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.
+
+**container-runtime**:
+
+The container runtime is the software that is responsible for running containers. K8S supports _Docker_, _containerd_, _CRI-O_.
+
+### Addons
+
+Addons use Kubernetes resources (DaemonSet, Deployment, etc) to implement cluster features. Because these are providing cluster-level features, namespaced resources for addons belong within the `kube-system` namespace.
+
+**DNS**:
+Cluster DNS is a DNS server, in addition to the other DNS server(s) in your environment, which serves DNS records for Kubernetes services.
+
+**Web UI(Dashboard)**:
+It allows users to manage and troubleshoot applications running in the cluster, as well as the cluster itself.
+
+**Container Resource Monitoring**:
+It records generic time-series metrics about containers in a central database, and provides a UI for browsing that data.
+
+**Cluster-level Logging**:
+It is responsible for saving container logs to a central log store with search/browsing interface.
+
+## Conclusion
+
+It's quite important for us to understand what is K8S and why. After we are familiar with the basic concepts, they will help us to understand those more specific topics.
+
+## Link
+
+[Kubernetes Overview](https://kubernetes.io/docs/concepts/overview/)
