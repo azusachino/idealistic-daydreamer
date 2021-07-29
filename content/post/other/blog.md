@@ -115,7 +115,7 @@ ssh-keygen -t rsa -f deploy
 
 其次需要将`deploy.pub`的内容追加到远端服务器的`~/.ssh/authorized_keys`中。
 
-然后修改.ssh 文件夹权限，`chmod 600 -R ~/.ssh` 。(其实，我也不知道这个步骤有什么用，因为我是用 root 操作的)
+然后修改.ssh 文件夹权限，`chmod 600 -R ~/.ssh` 。(`.ssh/`下的文件权限必须是 600，否则会有安全隐患)
 
 之后，需要修改 ssh 的配置文件。
 
@@ -177,7 +177,7 @@ jobs:
 
 ![github-secrets](img/2021/04/github-secrets.png)
 
-然后就可以推代码，看 actions 的执行情况了，祝好运。
+然后就可以推送代码，看 actions 的执行情况了，祝好运。
 
 ### 最后
 
