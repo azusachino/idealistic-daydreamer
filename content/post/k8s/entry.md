@@ -5,7 +5,7 @@ date: 2021-07-13
 slug: k8s/entry
 image: img/2021/07/aqua.png
 categories:
-  - K8S
+  - k8s
 ---
 
 我的 **K8S 学习之旅** 01

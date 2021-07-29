@@ -5,7 +5,7 @@ date: 2021-07-29
 slug: k8s/overview
 image: img/2021/07/mia.png
 categories:
-  - K8S
+  - k8s
 ---
 
 我的 **K8S 学习之旅** 02
