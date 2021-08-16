@@ -8,7 +8,7 @@ categories:
   - k8s
 ---
 
-我的 **K8S 学习之旅** 02
+我的 **K8S 学习之旅** 02 [v1.21]
 
 ## The progress of deployment
 

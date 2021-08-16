@@ -8,7 +8,7 @@ categories:
   - k8s
 ---
 
-我的 **K8S 学习之旅** 01
+我的 **K8S 学习之旅** 01 [v1.21]
 
 ## Kubernets 的官方定义
 
