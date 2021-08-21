@@ -1,6 +1,6 @@
 ---
 title: Resume
-description: 施工中...
+description: The sum of behaviour is retain a man's own dignity, without intruding upon others' liberty.
 date: "2021-04-28"
 lastmod: "2021-04-30"
 menu:
@@ -11,4 +11,4 @@ menu:
     pre: hash
 ---
 
-我是XXX，待续。
+一个无名小卒罢了。
