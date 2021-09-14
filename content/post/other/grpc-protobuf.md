@@ -18,7 +18,7 @@ categories:
 
 ### 安装 ptotoc-gen-xx
 
-可以从官方 github 的 release 下载, 如 [v3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3)，然后将 `google` 文件夹下的内容保存到 `C:ProgramData/chocolatey/lib/protoc/tools/include` 中即可。
+可以从官方 github 的 release 下载, 如 [v3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3)，然后将 `protobuf-3.17.3/src/google` 文件夹下的内容保存到 `C:ProgramData/chocolatey/lib/protoc/tools/include/google` 中即可。
 
 ## 项目结构
 
