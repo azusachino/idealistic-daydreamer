@@ -3,7 +3,7 @@ title: Minikube Deploy Mysql
 description: 一开始以为很简单...
 date: 2021-08-31
 slug: k8s/mysql-practice
-image: img/2021/08/careful-rami.png
+image: img/2021/08/VeniceBeach.jpg
 categories:
   - k8s
 ---

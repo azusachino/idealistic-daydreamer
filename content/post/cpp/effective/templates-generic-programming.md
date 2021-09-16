@@ -3,7 +3,7 @@ title: 模板与泛型编程
 description: templates & generics
 date: 2021-08-31
 slug: cpp/effective/templates-generics
-image: img/2021/08/negi-miku2.jpg
+image: img/2021/08/SeaSwallow.jpg
 categories:
   - c++
 ---

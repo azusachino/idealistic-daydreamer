@@ -3,7 +3,7 @@ title: 继承与面向对象设计
 description: Is-a & Has-a
 date: 2021-09-02
 slug: cpp/effective/oop
-image: img/2021/09/icy-miku.jpg
+image: img/2021/09/DjurdjevicaBridge.jpg
 categories:
   - c++
 ---

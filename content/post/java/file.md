@@ -3,7 +3,7 @@ title: Java读取文件的几种方式
 description: 最终还是怎么方便，怎么来
 date: 2021-05-31
 slug: java/file
-image: img/2021/05/miku-pan.jpg
+image: img/2021/05/HouseboatKerala.jpg
 categories:
   - exp
   - java

@@ -3,7 +3,7 @@ title: K8S setup
 description: a tough start
 date: 2021-07-13
 slug: k8s/entry
-image: img/2021/07/box-rami.png
+image: img/2021/07/Riou.jpg
 categories:
   - k8s
 ---

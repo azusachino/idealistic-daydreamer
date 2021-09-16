@@ -3,7 +3,7 @@ title: 构造/析构/赋值
 description: 一切皆有代价
 date: 2021-07-27
 slug: cpp/effective/cda
-image: img/2021/07/miku_cherry.jpg
+image: img/2021/07/GCVenice.jpg
 categories:
   - c++
 ---

@@ -3,7 +3,7 @@ title: Go NodeJs
 description: 唯有套路得人心
 date: 2021-06-01
 slug: backend/go-node
-image: img/2021/06/miku-rin.jpg
+image: img/2021/06/Aldeyjarfoss.jpg
 categories:
   - go
   - node

@@ -3,7 +3,7 @@ title: Protobuf Simple Practice
 description: 我懂了(完全没懂)
 date: 2021-09-13
 slug: other/grpc-protobuf
-image: img/2021/09/nora.png
+image: img/2021/09/WalhallaOverlook.jpg
 categories:
   - exp
 ---

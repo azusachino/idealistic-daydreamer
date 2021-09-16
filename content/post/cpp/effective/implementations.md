@@ -3,7 +3,7 @@ title: 实现
 description: 好的代码，效率至上
 date: 2021-08-25
 slug: cpp/effective/implementations
-image: img/2021/08/singing-miku.jpg
+image: img/2021/08/HowgillFells.jpg
 categories:
   - c++
 ---

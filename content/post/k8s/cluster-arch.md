@@ -3,7 +3,7 @@ title: K8S Cluster Architecture
 description: The Main View
 date: 2021-08-16
 slug: k8s/cluster-arch
-image: img/2021/08/gaming-rami.png
+image: img/2021/08/SanJuanIslands.jpg
 categories:
   - k8s
 ---

@@ -3,7 +3,7 @@ title: K8S Overview
 description: The First Sight
 date: 2021-07-29
 slug: k8s/overview
-image: img/2021/07/rami.png
+image: img/2021/07/MassachusettsHumpbacks.jpg
 categories:
   - k8s
 ---

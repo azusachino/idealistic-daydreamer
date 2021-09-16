@@ -3,7 +3,7 @@ title: 记一次博客搭建经历
 description:
 date: 2021-04-30
 slug: other/blog-creation
-image: img/2021/04/peek.jpg
+image: img/2021/04/Porcini.jpg
 categories:
   - exp
 ---

@@ -3,7 +3,7 @@ title: More Effective C++ Basics
 description: A new start
 date: 2021-09-06
 slug: cpp/more-effective/basics
-image: img/2021/09/nya-miku.jpg
+image: img/2021/09/Ruskeala.jpg
 categories:
   - c++
 ---

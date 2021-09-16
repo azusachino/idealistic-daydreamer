@@ -3,7 +3,7 @@ title: 资源管理
 description: 小心对待一切资源
 date: 2021-08-17
 slug: cpp/effective/resource-management
-image: img/2021/08/negi-miku.jpg
+image: img/2021/08/FlintstoneHouse.jpg
 categories:
   - c++
 ---

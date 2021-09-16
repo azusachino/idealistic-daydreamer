@@ -3,7 +3,7 @@ title: Customize new and delete
 description: from the start to the end
 date: 2021-09-02
 slug: cpp/effective/new-delete
-image: img/2021/09/umbrella-miku.jpg
+image: img/2021/09/MayonVolcano.jpg
 categories:
   - c++
 ---

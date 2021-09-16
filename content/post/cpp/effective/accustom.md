@@ -3,7 +3,7 @@ title: 初步学习Effective C++
 description: 半路出家的，读一遍完全不够啊
 date: 2021-07-13
 slug: cpp/effective/accustom
-image: img/2021/07/miku_-^-.jpg
+image: img/2021/07/JaneAusten.jpg
 categories:
   - c++
 ---

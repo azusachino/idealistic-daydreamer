@@ -3,7 +3,7 @@ title: 设计与声明
 description: 好的设计、好的开始
 date: 2021-08-21
 slug: cpp/effective/design-declaration
-image: img/2021/08/magical-miku.jpg
+image: img/2021/08/HippieTown.jpg
 categories:
   - c++
 ---
