@@ -6,6 +6,7 @@ slug: other/grpc-protobuf
 image: img/2021/09/WalhallaOverlook.jpg
 categories:
   - exp
+  - grpc
 ---
 
 鉴于最近接触到很多使用了 `grpc` 的服务，如果还不了解的话，就根本没办法继续学习下去了，所以(又)花了小半天时间再次熟悉了一下。

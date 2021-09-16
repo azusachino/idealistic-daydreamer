@@ -6,6 +6,7 @@ slug: k8s/mysql-practice
 image: img/2021/08/VeniceBeach.jpg
 categories:
   - k8s
+  - exp
 ---
 
 ## mysql-secret.yml
