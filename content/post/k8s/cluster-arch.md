@@ -1,6 +1,6 @@
 ---
 title: K8S Cluster Architecture
-description: The Main View
+description: Top to Bottom
 date: 2021-08-16
 slug: k8s/cluster-arch
 image: img/2021/08/SanJuanIslands.jpg
@@ -10,7 +10,7 @@ categories:
 
 我的 **K8S 学习之旅** 03 [v1.22]
 
-## Nodes
+## Node
 
 Kubernetes runs your workload by placing containers into Pods to run on Nodes. A node may be a virtual or physical machine, depending on the cluster. Each node is managed by the control plane and contains the services necessary to run Pods.
 
@@ -191,6 +191,6 @@ Kubernetes checks for and deletes objects that no longer have owner references, 
 
 The kubelet performs garbage collection on unused images every five minutes and on unused containers every minute.
 
-## Link
+## Reference
 
 [Kubernetes Cluster Architecture](https://kubernetes.io/docs/concepts/architecture/)

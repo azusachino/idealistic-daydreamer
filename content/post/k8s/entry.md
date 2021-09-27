@@ -16,7 +16,7 @@ Kubernetes is a portable, extensible, open-source platform for managing containe
 
 ## 单机搭建环境
 
-鉴于本人的几台服务器配置都太差了，`kubectl`相关的实战都在 windows 上完成。
+鉴于本人的几台服务器配置都太差了，`kubectl`相关的实战都将在 windows 上完成。
 
 ### 安装 Chocolatey
 
@@ -45,7 +45,9 @@ choco list --local
 
 ## 初步上手
 
-使用`minikube start`，我们就获得了一个单节点的 kubernetes cluster
+使用 `minikube start`，我们就获得了一个单节点的 kubernetes cluster
+
+如果有网络相关问题，可以使用 aliyun 维护的 minikube
 
 ### 第一个应用
 

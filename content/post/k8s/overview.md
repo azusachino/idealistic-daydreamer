@@ -25,7 +25,7 @@ Containers are similar to VMs, but they have relaxed isolation properties to sha
 
 ## What benefits containers bring?
 
-- Agile application createion and deployment
+- Agile application creation and deployment
 - Continuous development, integration and deployment
 - Dev and Ops separation of concerns
 - Observability
@@ -45,7 +45,7 @@ Containers are similar to VMs, but they have relaxed isolation properties to sha
 - Self-healing
 - Secret and configuration management
 
-### But K8S
+### What K8S does not?
 
 - Does not limit the types of applications supported.
 - Does not deploy source code and does not build your application.
@@ -140,8 +140,8 @@ It is responsible for saving container logs to a central log store with search/b
 
 ## Conclusion
 
-It's quite important for us to understand what is K8S and why. After we are familiar with the basic concepts, they will help us to understand those more specific topics.
+It's quite important for us to understand what is K8S and why. After we are familiar with these basic concepts, we will understand more specific topics.
 
-## Link
+## Reference
 
 [Kubernetes Overview](https://kubernetes.io/docs/concepts/overview/)
