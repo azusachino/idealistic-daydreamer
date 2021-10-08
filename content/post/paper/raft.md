@@ -3,7 +3,7 @@ title: Raft Note
 description: The generally accepted Consensus Algorithm
 date: 2021-10-08
 slug: paper/raft
-image: img/2021/09/MackenzieRiver.jpg
+image: img/2021/10/MackenzieRiver.jpg
 categories:
   - raft
   - theory
@@ -61,7 +61,7 @@ Raft implements consensus by first electing a distinguished leader, then giving 
 
 ### Raft Node State
 
-![.](img/2021/09/raft-state.png)
+![.](img/2021/10/raft-state.png)
 
 **persistent on all servers**:
 
