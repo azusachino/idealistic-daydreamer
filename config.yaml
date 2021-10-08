@@ -27,7 +27,7 @@ params:
 
   footer:
     since: 2021
-    customText: "When you truly believe in something, you are ready to go."
+    customText: "When you truly believe in something, you are ready to do anything."
 
   dateFormat:
     published: Jan 02, 2006
@@ -35,13 +35,13 @@ params:
 
   sidebar:
     emoji: 🎨
-    subtitle: Palette
+    subtitle: Palette gives you the ability to create any brand new world, if you like.
     avatar:
       local: true
       src: img/avatar.jpg
 
   article:
-    math: false
+    math: true # enable math expression
     license:
       enabled: true
       default: Licensed under CC BY-NC-SA 4.0
