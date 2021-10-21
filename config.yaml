@@ -18,6 +18,11 @@ permalinks:
   post: /p/:slug/
   page: /:slug/
 
+module:
+  hugoVersion:
+    extended: true
+    min: "0.87.0"
+
 params:
   mainSections:
     - post
@@ -31,33 +36,37 @@ params:
 
   dateFormat:
     published: Jan 02, 2006
-    lastUpdated: Jan 02, 2006
+    lastUpdated: Jan 02, 2006 15:04 CST
 
   sidebar:
     emoji: 🎨
     subtitle: Palette gives you the ability to create any brand new world, if you like.
     avatar:
+      enabled: true
       local: true
       src: img/avatar.jpg
 
   article:
-    math: true # enable math expression
+    math: true
+    toc: true
+    readingTime: true
     license:
       enabled: true
       default: Licensed under CC BY-NC-SA 4.0
 
   comments:
     enabled: true
-    provider: disqus
+    provider: utterances
 
-    gitalk:
-      clientID: placeholder
-      clientSecret: placeholder
-      repo: https://github.com/AzusaChino/Idealistic-Daydreamer
-      owner: AzusaChino
+    disqusjs:
+      shortname:
+      apiUrl:
+      apiKey:
+      admin:
+      adminLabel:
 
     utterances:
-      repo:
+      repo: https://github.com/AzusaChino/Idealistic-Daydreamer
       issueTerm: pathname
       label:
 
@@ -65,6 +74,58 @@ params:
       host:
       site:
       locale:
+
+    vssue:
+      platform:
+      owner:
+      repo:
+      clientId:
+      clientSecret:
+      autoCreateIssue: false
+
+    # Waline client configuration see: https://waline.js.org/en/reference/client.html
+    waline:
+      serverURL:
+      lang:
+      visitor:
+      avatar:
+      emoji:
+        - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+      requiredMeta:
+        - name
+        - email
+        - url
+      placeholder:
+      locale:
+        admin: Admin
+
+    twikoo:
+      envId:
+      region:
+      path:
+      lang:
+
+    giscus:
+      repo:
+      repoID:
+      category:
+      categoryID:
+      mapping:
+      lightTheme:
+      darkTheme:
+      reactionsEnabled: 1
+      emitMetadata: 0
+
+    gitalk:
+      owner:
+      admin:
+      repo:
+      clientID:
+      clientSecret:
+
+    cusdis:
+      host:
+      id:
 
   widgets:
     enabled:
