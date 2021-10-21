@@ -50,6 +50,12 @@ params:
     enabled: true
     provider: disqus
 
+    gitalk:
+      clientID: placeholder
+      clientSecret: placeholder
+      repo: https://github.com/AzusaChino/Idealistic-Daydreamer
+      owner: AzusaChino
+
     utterances:
       repo:
       issueTerm: pathname
