@@ -67,7 +67,7 @@ params:
 
     utterances:
       repo: AzusaChino/Idealistic-Daydreamer
-      issueTerm: pathname
+      issueTerm: title
       label:
 
     remark42:
