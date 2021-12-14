@@ -9,6 +9,8 @@ categories:
   - exp
 ---
 
+我的 **K8S 学习之旅** 04 [v1.22]
+
 ## mysql-secret.yml
 
 use `echo -n 'your_password' | base64` to generate a opaque password.

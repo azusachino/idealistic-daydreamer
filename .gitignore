@@ -27,3 +27,4 @@ _testmain.go
 public/
 .idea/
 resources/
+*.lock

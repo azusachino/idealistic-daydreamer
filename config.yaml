@@ -40,7 +40,7 @@ params:
 
   sidebar:
     emoji: 🎨
-    subtitle: Palette gives you the ability to create any brand new world, if you like.
+    subtitle: Palette gives you the ability to create a new world, if you like.
     avatar:
       enabled: true
       local: true
@@ -49,7 +49,7 @@ params:
   article:
     math: true
     toc: true
-    readingTime: true
+    readingTime: false
     license:
       enabled: true
       default: Licensed under CC BY-NC-SA 4.0
@@ -68,7 +68,7 @@ params:
     utterances:
       repo: AzusaChino/Idealistic-Daydreamer
       issueTerm: title
-      label:
+      label: blog
 
     remark42:
       host:
