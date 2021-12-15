@@ -8,7 +8,7 @@ categories:
   - rust
 ---
 
-Learned from [offical book](https://doc.rust-lang.org/book). One simple advice, **Check the source code**, there are a lot of usage examples and explanation.
+Learned from [official book](https://doc.rust-lang.org/book). One simple advice, **Check the source code**, there are a lot of usage examples and explanation.
 
 ## Key Concepts
 
