@@ -1,32 +1,32 @@
 ---
 title: Rust入门
 description: Get start with Rust
-date: 2021-12-14
+date: 2021-12-15
 slug: rust/startup
 image: img/2021/12/LittleBirds.jpg
 categories:
   - rust
 ---
 
-Learned from offical [book](https://doc.rust-lang.org/book)
+Learned from [offical book](https://doc.rust-lang.org/book). One simple advice, **Check the source code**, there are a lot of usage examples and explanation.
 
-## Rust Key Concepts
+## Key Concepts
 
-1. module & crate
-2. ownership, clone, move
-3. borrow(reference), `'static`, lifecycle
-4. struct, trait, impl for, as, `dyn Any`
-5. macro
-6. closure
-7. smart pointers (like c++)
+1. Module & Crate
+2. Ownership: clone | move
+3. Borrow (reference) & lifecycle (`'static`, `'a`)
+4. Struct, trait, impl for, as, `dyn Any`
+5. Macro (meta programming)
+6. Closure
+7. Smart pointers
 
 ### Module & Crate
 
-From large to small which is package(or cargo project), crate(module), your code.
+package (cargo project) -> crate (module) -> your code.
 
 ```rust
 rustlings  // project
-├── src // source
+├── src // source dir
     ├── library // mod or crate
     │   ├── book.rs
     │   └── user.rs
@@ -66,8 +66,8 @@ pub mod b {
 
 ### Ownership
 
-1. For passing a clone, the object shall impl trait `Copy`
-2. Integers, bool, floats, `&str`, tuple are compatible with `Copy` trait
+1. For passing a clone, the callee shall impl trait `Copy`
+2. Ints, bool, floats, `&str`, tuple are compatible with `Copy` trait
 3. `Copy` is shallow clone, `Clone` is deep clone
 
 ```rust
@@ -92,9 +92,9 @@ fn main() {
 }
 ```
 
-### Borrow Move
+### Borrow or Move
 
-Only one mut borrow or serval immut borrow at one time.
+Only one mutable borrow or multiple immutable borrows at one time.
 
 ```rust
 mod bm {
@@ -115,13 +115,13 @@ mod bm {
         let mut z = String::from("zzz");
         borrow_mut(&mut z);
 
-        // compile error under below
+        // compile error under below, extra immutable borrow
         borrow(&z);
     }
 }
 ```
 
-### Struct Trait
+### Struct & Trait
 
 - `'static` lives with the application
 - `'a` indicate a specific scope
@@ -153,7 +153,7 @@ mod st {
 
 ### Macro
 
-meta-programming in rust, I don't know much yet.
+meta programming in rust, I didn't know much yet, here is an example.
 
 ```rust
 macro_rules! success {
@@ -177,7 +177,7 @@ macro_rules! success {
 
 ### Closure
 
-`Fn` & `FnOnce`
+`Fn` & `FnMut` & `FnOnce` as Function pointers
 
 ```rust
 mod cl {
@@ -196,18 +196,86 @@ mod cl {
         thread::spawn(move || {
             println!(s);
         });
+        let _pp = |f: dyn Fn<()>| {
+            f();
+        };
+    }
+
+    fn do_twice<F>(mut func: F)
+        where F: FnMut<()> {
+        func();
     }
 }
 ```
 
 ### Smart Pointers
 
-trait `Deref` & `Drop` for `*a` & graceful recycle
+trait `Deref` & `Drop` for dereference (`*a`) and graceful recycle
 
 - `Box<T>` for allocating values on the heap
 - `Rc<T>`, a reference counting type that enables multiple ownership
 - `Ref<T>` and `RefMut<T>`, accessed through `RefCell<T>`, a type that enforces the borrowing rules at runtime instead of compile time
 
 ```rust
+mod sp {
+    use std::cell::RefCell;
+    use std::rc::{Rc, Weak};
 
+    fn t_box() {
+        // move value from stack to heap
+        let val: u8 = 5;
+        let _b: Box<u8> = Box::new(val);
+
+        // move value from heap to stack by dereference
+        let boxed: Box<u8> = Box::new(5);
+        let _val: u8 = *boxed;
+    }
+
+    struct Owner {
+        name: String,
+        gadgets: RefCell<Vec<Weak<Gadget>>>,
+    }
+
+    struct Gadget {
+        id: i32,
+        owner: Rc<Owner>,
+    }
+
+    fn t_rc() {
+        let gadget_owner: Rc<Owner> = Rc::new(
+            Owner {
+                name: "Gadget Man".to_string(),
+                gadgets: RefCell::new(vec![]),
+            }
+        );
+
+        let g1 = Rc::new(
+            Gadget {
+                id: 1,
+                owner: Rc::clone(&gadget_owner),
+            }
+        );
+        let g2 = Rc::new(
+            Gadget {
+                id: 2,
+                owner: gadget_owner.clone(),
+            }
+        );
+
+        {
+            let mut gadgets = gadget_owner.gadgets.borrow_mut();
+            gadgets.push(Rc::downgrade(&g1));
+            gadgets.push(Rc::downgrade(&g2));
+        }
+
+        for gadget_weak in gadget_owner.gadgets.borrow().iter() {
+            let g = gadget_weak.upgrade().unwrap();
+            println!("Gadget {} owned by {}", g.id, g.owner.name);
+        }
+    }
+}
 ```
+
+## At Last
+
+Hopefully, there are many rust projects on github, I shall learn them along with practices.
