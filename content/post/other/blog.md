@@ -87,7 +87,7 @@ A Fast and Flexible Static Site Generator built with love by bep, spf13 and frie
 #### **比较重要的点**
 
 1. 在[这里](https://themes.gohugo.io/)找到一个喜欢的主题，然后放到`themes`文件夹里面，虽然官方推荐采用`submodule`的形式，但我花了很久也没弄明白怎么用，就直接把主题文件一并上传到仓库了。
-2. 根据模板修改`config.yaml`，也就是项目整体的配置，可以参考[我的配置](https://github.com/AzusaChino/Idealistic-Daydreamer/blob/main/config.yaml)(注意：**配置和主题是有关联的，我的配置仅供参考**)
+2. 根据模板修改`config.yaml`，也就是项目整体的配置，可以参考[我的配置](https://github.com/azusachino/idealistic-daydreamer/blob/main/config.yaml)(注意：**配置和主题是有关联的，我的配置仅供参考**)
 3. 另外一个坑了我很久的是，图片一直加载不出来。最终的解决办法是，新建了`static/img`文件夹，然后就可以用`img/xxx.png`的形式在文章中访问到了。
 
 遇到什么问题的话，请善用搜索引擎以及参考别人的博客，或者去看看有没有类似问题的 issue。
