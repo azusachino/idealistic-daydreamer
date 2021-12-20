@@ -2,9 +2,11 @@
 title: 如何阅读一本书
 description: 读完一本工具书，并不能代表你就掌握了这个工具
 date: 2021-06-08
-slug: book/how-to-read-a-book
-image: img/book/2021/073.jpg
+slug: how-to-read-a-book
+image: img/2021/book/how-to-read-a-book.jpg
 categories:
+  - book
+tags:
   - book
 ---
 
