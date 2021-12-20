@@ -19,12 +19,12 @@ jobs:
       - name: Setup Hugo # 第二步，安装 hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.88.1"
+          hugo-version: "0.89.0"
           extended: true
 
       - name: Build # 第三步，编译 hugo
         run: |
-          hugo -D --minify
+          hugo -D
       - name: Deploy to Server # 第四步，rsync推文件
         uses: AEnterprise/rsync-deploy@v1.0 # 使用别人包装好的步骤镜像
         env:
