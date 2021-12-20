@@ -4,6 +4,6 @@ description: Learning with experiences (in practice)
 slug: exp
 image: LakePukaki.jpg
 style:
-  background: "#2a9d8f"
+  background: "#d6a479"
   color: "#fff"
 ---
