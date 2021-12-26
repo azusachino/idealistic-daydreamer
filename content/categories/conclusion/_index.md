@@ -4,6 +4,6 @@ description: Learning with conclusions (in general)
 slug: conclusion
 image: HallwylfjelletSunset.jpg
 style:
-  background: "#eb9349"
+  background: "#ffd36a"
   color: "#fff"
 ---

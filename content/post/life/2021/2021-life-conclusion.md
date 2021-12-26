@@ -5,8 +5,9 @@ date: 2021-12-18
 slug: 2021-life-conclusion
 image: img/2021/12/SalzburgKrampus.jpg
 categories:
-  - conclusion
+  - life
 tags:
+  - life
   - conclusion
 ---
 
