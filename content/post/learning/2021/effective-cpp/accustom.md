@@ -12,7 +12,7 @@ tags:
 
 首先: **让自己习惯 C++**
 
-## 1. 视 C++为一个语言联邦
+## 视 C++为一个语言联邦
 
 现如今的 C++是个多重泛型编程语言，同时支持过程形式，面向对象形式，函数形式，泛型形式，元编程形式；主要成分如下：
 
@@ -21,7 +21,7 @@ tags:
 - Template C++
 - STL: containers, iterator, algorithms, function objects
 
-## 2. 尽量以 consts, enums, inlines 替换#defines
+## 尽量以 `const`, `enum`, `inline` 替换 `#define`
 
 `#define`不被视为语言的一部分。
 
@@ -30,7 +30,7 @@ tags:
 
 宏相关的内容，我大都不太了解。。。
 
-## 3. 尽可能使用 const
+## 尽可能使用 const
 
 **const 允许指定一个语义约束，然后编译器会强制实施这项约束。**可以使用 const 在 classes 外部修饰 global 或 namespace 作用域中的常量，或修饰文件、函数、区块作用域中被声明为 static 的对象。
 
@@ -61,7 +61,7 @@ const TextBlock ctb("World");
 std::cout << ctb[0]; // call const
 ```
 
-## 4. 确定对象被使用前已被初始化
+## 确定对象被使用前已被初始化
 
 **读取未初始化的值会导致不明确的行为**，而这也是我们写 C++的时候极力想避免的。
 

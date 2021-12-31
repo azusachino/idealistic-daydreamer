@@ -6,7 +6,7 @@ aliases:
   - about-us
   - about-hugo
   - contact
-lastmod: "2021-04-30"
+lastmod: "2021-12-31"
 menu:
   main:
     main: 
@@ -15,6 +15,28 @@ menu:
     params:
       icon: user
 ---
+
+_An idealistic daydreamer._
+
+## Current Resolution
+
+Taking control of my own life.
+
+## Current Status
+
+Working as a little Java Programmer, but learning docker & kubernetes and many other fun stuffs.
+
+## Interests
+
+- Read Manga (Tachiyomi Best APP Ever)
+- Watch Animation (Only Good ones)
+- Read Books (CS, textbook, literature, mental, science, philosophy and any other interesting one)
+- Gaming (MAIMAI is my favorite now)
+- Learning (Code, Foreign Language, Piano, Drawing for now)
+
+## Life long rules
+
+The sum of behavior is to retain a man's own dignity without intruding upon others' liberty.
 
 **假如我最终无法继续战斗下去，假如我放弃了，我堕落了，那么我就比那些从未战斗过的人更为恶劣。**
 
