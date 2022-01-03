@@ -1,5 +1,5 @@
 ---
-title: Weekly Report 2021-52
+title: Weekly Report 2021.52
 description: Last week but a start of new series
 date: 2021-12-27
 slug: 2021-52-week-report
@@ -12,7 +12,7 @@ tags:
 
 Cold week indeed, which causes little effort input on learning, sad.
 
-## Read
+## Reading
 
 I will gradually switch to physical books instead of digital ones. Reading online was quite convenient, but that convenience also made me didn't pay much attention to the book, and most importantly, I began to care quality more than quantity.
 
@@ -28,7 +28,7 @@ Even though I only read the preface, I should remember the `Five steps of Feynma
 
 Hope to finish this book before 2022.
 
-## Learn
+## Learning
 
 ### Git commit rules
 
