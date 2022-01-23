@@ -1,6 +1,6 @@
 ---
 title: Weekly Report 2022.04
-description: Ready to Live
+description: いつかの時には、 好き放題生きて遺影はピースで 清々しくこの世を去りたい
 date: 2022-01-23
 slug: 2022-04-week-report
 image: img/2022/01/PorcupineWillow.jpg
