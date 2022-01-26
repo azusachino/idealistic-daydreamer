@@ -1,7 +1,7 @@
 ---
 title: About
 description: 我想要的无非是遵从自己的内心去生活, 为什么竟是如此艰难呢？
-date: "2021-04-28"
+date: "2021-12-31"
 aliases:
   - about-us
   - about-hugo
@@ -24,13 +24,13 @@ Taking control of my own life.
 
 ## Current Status
 
-Working as a little Java Programmer, but learning docker & kubernetes and many other fun stuffs.
+Working as Java Programmer, but learning docker & kubernetes and other fun stuffs.
 
 ## Interests
 
 - Read Manga (Tachiyomi Best APP Ever)
 - Watch Animation (Only Good ones)
-- Read Books (CS, textbook, literature, mental, science, philosophy and any other interesting one)
+- Read Books (CS, textbook, literature, science, psychology, philosophy and any other interesting category)
 - Gaming (MAIMAI is my favorite now)
 - Learning (Code, Foreign Language, Piano, Drawing for now)
 
