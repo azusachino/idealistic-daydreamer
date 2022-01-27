@@ -10,46 +10,53 @@ tags:
   - runc
 ---
 
-说实话，对于底层的交互还是不甚了解的；暂时只能从一个比较高的层面去看 runc 是怎么创建并运行一个 Container 的。
+其实，对于底层 Linux 的 syscall 还是不甚了解的；暂时只能从一个比较高的层面去看 runc 是怎么创建并运行一个 Container 的。
 
-## runC 概念
+## 概念定义
 
-[runC](https://github.com/opencontainers/runc)是一个遵循 OCI 标准的用来运行容器的命令行工具，也是一个 Runtime Spec 的实现。
+[runC](https://github.com/opencontainers/runc)是一个遵循 OCI 标准的用来运行容器的命令行工具，也是一个 [Runtime Spec](https://github.com/opencontainers/runtime-spec/blob/main/runtime.md) 的实现。
 
-## 使用 runC
+## 开始使用
 
 ### 创建一个 OCI Bundle
 
 `OCI Bundle` 是指满足 OCI 标准的一系列文件，这些文件包含了运行容器所需要的所有数据，存放在一个共同的目录；该目录包含以下两项内容：
 
 1. `config.json`：容器的运行时配置
-2. 容器的 `root` filesystem
+2. `rootfs`: 容器的 filesystem
 
 我们可以通过 `docker export` 或者 `podman export` 将已有镜像导出为 `OCI Bundle` 的格式。
 
 ```sh
 # create the bundle folder
-mkdir ~/container1
-cd ~/container1
+mkdir ~/demo
+cd ~/demo
 
 # create the root filesystem
 mkdir rootfs
 podman export $(podman create busybox) | tar -C rootfs -xvf -
+```
 
+### 运行 Container
+
+```sh
 # create the config.json
 runc spec
 
-# run as root (change config.json#process#args to "sleep", "5" for better interact)
-runc create container1
-runc start container1
+# run as root (change config.json#process#args to `"sleep", "5"` for better interaction)
+runc create demo
+runc start demo
+
+# check container status
+runc ps
 
 # delete the container
-runc delete container1
+runc delete demo
 ```
 
-## The path of command `runc run`
+## `runc run` 的大致流程
 
-1. 读取 `config.json` 文件，作为 Container 的 RuntimeSpec
+1. 读取 `config.json` 文件，作为 Container 的 `RuntimeSpec` 配置来源
 2. 建立 Socket，作为 runc 和 Container 之间的交互桥梁
 3. 创建 Container (linuxContainer)
    1. 创建 libcontainer 所需的配置
@@ -85,7 +92,7 @@ main.go#runCommand
 │   │   │   │   │── spec_linux.go#createLibcontainerMount(string, specs.Mount) (*configs.Mount, error)
 │   │   │   │   │── spec_linux.go#createDevices(*specs.Spec, *configs.Config) ([]*devices.Device, error)
 │   │   │   │   │── spec_linux.go#CreateCgroupConfig(*CreateOpts, []*devices.Device) (*configs.Cgroup, error)
-│   │   │   │   │── spec_linux.go#initMaps()
+│   │   │   │   │── spec_linux.go#initMaps()  // namespaces, mountPropagation, mountFlags, recAttrFlags
 │   │   │   │   │── spec_linux.go#setupUserNamespace(*specs.Spec, *configs.Config) error
 │   │   │   │   │── spec_linux.go#SetupSeccomp(*specs.LinuxSeccomp) (*configs.Seccomp, error)
 │   │   │   │   └── spec_linux.go#createHooks(rspec *specs.Spec, config *configs.Config)
@@ -96,7 +103,7 @@ main.go#runCommand
 │   │   │   │   │── configs/validate/validator.go#Validate(*configs.Config) (error)
 │   │   │   │   │── cgroups/manager/new.go#NewWithPaths(config *configs.Cgroup, paths map[string]string) (cgroups.Manager, error)
 │   │   │   │   │── cgroups/fs2/fs2.go#GetFreezerState() (config.FreezerState, error)
-│   │   │   │   └── factory_linux.go#&linuxContainer{}
+│   │   │   │   └── factory_linux.go#&linuxContainer{} // create linuxContainer as Container implementation
 │   │   │── notify_socket.go#setupSocketDirectory()
 │   │   │── notify_socket.go#bindSocket()
 │   │   │── utils_linux.go#run(*specs.Process) (int, error)
@@ -111,7 +118,7 @@ main.go#runCommand
 │   │   │   │   │   │── container_linux.go#start(process *Process) (retErr error)
 │   │   │   │   │   │   │── container_linux.go#newParentProcess(p *Process) (parentProcess, error)
 │   │   │   │   │   │   │── process_linux.go#forwardChildLogs() chan error
-│   │   │   │   │   │   │── process_linux.go#start() (retErr error)
+│   │   │   │   │   │   │── process_linux.go#start() (retErr error) // runc init
 │   │   │   │   │   │   │── container_linux.go#currentOCIState() (*specs.State, error)
 │   │   │   │   │   │   └── container_linux.go#ignoreTerminateErrors(err error) error
 │   │   │   │   │   │── container_linux.go#deleteExecFifo()
@@ -265,7 +272,7 @@ main.go#runCommand
 
 ## 总结
 
-学习结果不是很理想，还需努力。
+学习结果不是很理想，还需继续精进。
 
 ## Reference
 

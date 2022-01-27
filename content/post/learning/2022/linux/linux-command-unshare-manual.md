@@ -230,13 +230,32 @@ FOO
 
 ### mount
 
+#### mount 命令
+
+mount - show all mounted filesystem
+
+- 挂载指的是在 Linux 系统中，磁盘分区后，需要将其挂载到其它目录下，才可以进行访问
+- 将设备文件中的顶级目录连接到 Linux 根目录下的某一目录（最好是空目录），访问此目录就等同于访问设备文件
+- 如果不挂载，通过 Linux 系统中的图形界面系统可以查看找到硬件设备，但命令行方式无法找到。
+
+#### mount 命名空间
+
+mount namespace 可隔离出一个具有独立挂载点信息的运行环境，内核知道如何去维护每个 namespace 的挂载点列表。即**每个 namespace 之间的挂载点列表是独立的，各自挂载互不影响**。
+
 ```sh
 > mount --bind /root/namespaces /root/namespaces
 > mount --make-private /root/namespaces
 > touch /root/namespaces/mnt
 > unshare --mount=/root/namespaces/mnt
+
+> ls -l /proc/$$/ns/mnt
+lrwxrwxrwx 1 root root 0 Jan 27 11:35 /proc/2208210/ns/mnt -> 'mnt:[4026531840]'
+> unshare -m -u /bin/bash
+> ls -l /proc/$$/ns/mnt
+lrwxrwxrwx 1 root root 0 Jan 27 11:20 /proc/2207404/ns/mnt -> 'mnt:[4026532263]'
 ```
 
 ## Reference
 
 - [unshare(1) - Linux manual page](https://man7.org/linux/man-pages/man1/unshare.1.html)
+- [理解 mount namespace](https://blog.csdn.net/woshaguayi/article/details/114086207)
