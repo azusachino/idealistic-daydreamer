@@ -49,3 +49,7 @@ The sum of behavior is to retain a man's own dignity without intruding upon othe
 5. 它自由软弱，却把它认为是生命的坚韧
 6. 当它鄙夷一张丑恶的嘴脸时，却不知那正是自己面具中的一副
 7. 它侧身于生活的污泥中虽不甘心，却又畏首畏尾
+
+## Extra
+
+A [place](https://rin.azusachino.cn) I wrote notes.

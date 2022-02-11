@@ -124,6 +124,11 @@ menu:
       url: https://twitter.com/azusachino
       params:
         icon: brand-twitter
+    - identifier: note
+      name: Note
+      url: https://rin.azusachino.cn
+      params:
+        icon: link
 
 related:
   includeNewer: true
