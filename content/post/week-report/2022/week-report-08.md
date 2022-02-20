@@ -16,7 +16,7 @@ Combine theory and practice: Nothing works and don't know why.
 
 ### 《经济常识一本通》
 
-不能说这本书的内容有多好，但是作为一本通识的入门还是有一定效用的。另外记录了一些[笔记](https://rin.azusachino.cn/reading/%E7%BB%8F%E6%B5%8E%E5%B8%B8%E8%AF%86%E4%B8%80%E6%9C%AC%E9%80%9A/index.html)，以留后续速查。
+不能说这本书的内容有多好，但是作为一本通识的入门还是有一定效用的。另外记录了一些[笔记](https://rin.azusachino.cn/reading/economy-common-sense/index.html)，以留后续速查。
 
 ## Learning
 
