@@ -1,9 +1,9 @@
 ---
 title: 娱乐至死
-description: 娱乐也要适度哦
+description: 娱乐也要适可而止
 date: 2021-07-29
 slug: amusing-ourselves-to-death
-image: img/2021/book/amusing-ourselves-to-death.jpg
+image: book/2021/amusing-ourselves-to-death.jpg
 categories:
   - book
 tags:

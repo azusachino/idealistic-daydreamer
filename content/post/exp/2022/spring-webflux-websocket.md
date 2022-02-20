@@ -1,5 +1,5 @@
 ---
-title: Combine WebFlux with WebSocket
+title: Use WebSocket with WebFlux
 description: Yet another learning record
 date: 2022-02-17
 slug: spring-webflux-websocket
