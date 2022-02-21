@@ -48,7 +48,7 @@ Live Streaming is streaming media simultaneously recorded and broadcast in real-
 
 ## 总结
 
-我还是不明白直播 PK 为什么是个热门应用场景。
+我还是不明白直播 PK 为什么会成为热门应用场景。
 
 ## Further Learning
 
