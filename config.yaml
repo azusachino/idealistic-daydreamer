@@ -61,7 +61,7 @@ params:
     utterances:
       repo: azusachino/idealistic-daydreamer
       issueTerm: title
-      label: blog
+      label: comment
 
   widgets:
     enabled:
