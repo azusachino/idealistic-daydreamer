@@ -1,0 +1,47 @@
+---
+title: Weekly Report 2022.09
+description: 君は初恋を知る途中，僕はそんな君に夢中
+date: 2022-02-27
+slug: 2022-09-week-report
+image: img/2022/02/GreatTits.jpg
+categories:
+  - week-report
+tags:
+  - week-report
+---
+
+## Reading
+
+### 《孤筏重洋》
+
+虽然标题看起来很宏大，而且确实是一件历史上从未有人挑战过的事情；但在读书的过程中，却越发觉得实际上并没有什么值得惊叹的地方。在航行的过程中，远航团队遇到了各式各样的鱼，也吃了很多鱼，但好像就没有其他更加“酷”的事情了。【这就让我想到了，灰姑娘和王子喜结连理之后过的也是普通的婚姻生活】不过对于本书前部分中关于航行前的动机和准备工作，还是比较认同作者的行动力，以及各行各界的助力的。
+
+## Learning
+
+### TLPI (Linux/Unix 系统编程手册)
+
+本周开始看 Linux 相关的内容，主要因为之前学习容器相关知识时，遇到了太多 syscall、线程间的数据交换、ControlGroup 等 Linux 的概念，当时可能就作为名词记下来，但对于不太理解的内容，肯定无法维持长时间的记忆。于是开始学习 Unix 相关的知识，以方便后续理解容器中用到的各种工具。
+
+在学习的过程中，记录了一些笔记，参考[这里](https://rin.azusachino.cn/reading/linux-unix-handbook/01.basic-concept.html)
+
+本周主要对通用 I/O 的概念有了一定的了解，针对 open/read/write/close 的 syscall，也知道了基本概念和使用方式。
+
+## Life
+
+每周六天工作，就没有太多时间去做自己的事情了；这又意外促使了周日在外面玩了一整天。一方面没有太多时间可以自由安排了，一方面又使得生活中安排十分混乱。
+
+周日在外面泡了一天，虽然打了很多 MAI，但还是很菜；只能说算是放开自己，不去思考，减少了对大脑的负担吧。(┬┬﹏┬┬)
+
+## Quote
+
+> - 我们生的太晚，没有赶上大航海时代；我们又生的太早，看不到踏向星海的那天。
+> - Improving creative education begins with retrieving the benefits of apprenticeships. When you imitate somebody’s work, you’re forced to think about why they made the decisions they made. Through consumption and creation, you weave the threads of other people’s work into a tapestry of your own.
+
+## Recommend Articles
+
+- [Imitate, then Innovate](https://perell.com/essay/imitate-then-innovate/)
+- [How I Learned French in 12 Months](https://runwes.com/2020/02/11/howilearnedfrench.html)
+
+## Reference
+
+- [孤筏重洋](https://weread.qq.com/web/reader/2ec3289071e128722ec7b71)
