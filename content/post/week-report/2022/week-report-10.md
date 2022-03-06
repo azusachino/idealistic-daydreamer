@@ -1,6 +1,6 @@
 ---
 title: Weekly Report 2022.10
-description:
+description: 暗自怜惜
 date: 2022-03-06
 slug: 2022-10-week-report
 image: img/2022/03/IPBDMom.jpg
