@@ -6,7 +6,7 @@ aliases:
   - about-us
   - about-hugo
   - contact
-lastmod: "2021-12-31"
+lastmod: "2022-06-06"
 menu:
   main:
     main: 
@@ -16,17 +16,17 @@ menu:
       icon: user
 ---
 
-_An idealistic daydreamer._
+99% 的理论 + 1% 的实践 = me (idealistic daydreamer)
 
 ## Current Resolution
 
-Taking control of my own life.
+减少周围的矛盾
 
 ## Current Status
 
-Working as Java Programmer, but learning docker & kubernetes and other fun stuffs.
+试错寻找合适的生活方式
 
-## Interests
+## 兴趣爱好
 
 - Read Manga (Tachiyomi Best APP Ever)
 - Watch Animation (Only Good ones)
@@ -52,4 +52,4 @@ The sum of behavior is to retain a man's own dignity without intruding upon othe
 
 ## Extra
 
-A [place](https://rin.azusachino.cn) I wrote notes.
+A [place](https://rin.azusachino.cn) where I wrote notes.
