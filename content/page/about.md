@@ -9,8 +9,6 @@ aliases:
 lastmod: "2022-06-06"
 menu:
   main:
-    main: 
-  main:
     weight: -90
     params:
       icon: user
