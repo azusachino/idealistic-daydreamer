@@ -4,10 +4,8 @@ description: 最终还是怎么方便，怎么来
 date: 2021-05-31
 slug: java-file-reading
 image: img/2021/05/HouseboatKerala.jpg
-categories:
-  - exp
-tags:
-  - java
+categories: [Exp]
+tags: [Exp, Java]
 ---
 
 近期开发涉及到了文件的读取，再次重温一下常用的几种方式。

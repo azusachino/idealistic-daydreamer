@@ -1,13 +1,11 @@
 ---
-title: 关于LogStash的一些小结
+title: 关于 LogStash 的一些小结
 description: 一直在学，却总是学不会
 date: 2021-05-29
 slug: logstash-basic-usage
 image: img/2021/05/PortoFlavia.jpg
-categories:
-  - exp
-tags:
-  - logstash
+categories: [Exp]
+tags: [Exp, Logstash]
 ---
 
 虽然早在不久前就已经开发了一个日志采集的组件并学习了 ELK 的部署方案，但事实证明，不下功夫去理清细节的话，每次用的时候都要重新再学一遍。

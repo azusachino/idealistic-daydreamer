@@ -4,10 +4,8 @@ description: 探索 Package
 date: 2022-02-24
 slug: understand-network-ip-ethernet
 image: img/2022/02/ManhattanView.jpg
-categories:
-  - learning
-tags:
-  - network
+categories: [Learning]
+tags: [Learning, CS, Network]
 ---
 
 ## IP 与以太网的包相关操作

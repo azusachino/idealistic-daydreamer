@@ -4,10 +4,8 @@ description: My current status of learning Containerization
 date: 2022-01-16
 slug: introduction-runc
 image: img/2022/01/KjellHenriksen.jpg
-categories:
-  - conclusion
-tags:
-  - runc
+categories: [Conclusion]
+tags: [Conclusion, Runc]
 ---
 
 其实，对于底层 Linux 的 syscall 还是不甚了解的；暂时只能从一个比较高的层面去看 runc 是怎么创建并运行一个 Container 的。

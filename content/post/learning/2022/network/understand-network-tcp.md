@@ -4,10 +4,8 @@ description: 探索协议栈
 date: 2022-02-14
 slug: understand-network-tcp
 image: img/2022/02/WinterOlymics.jpg
-categories:
-  - learning
-tags:
-  - network
+categories: [Learning]
+tags: [Learning, CS, Network]
 ---
 
 ## 创建套接字

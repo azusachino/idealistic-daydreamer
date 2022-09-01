@@ -4,10 +4,8 @@ description: from the start to the end
 date: 2021-09-02
 slug: effective-cpp/new-delete
 image: img/2021/09/MayonVolcano.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## Understand the behavior of the new-handler

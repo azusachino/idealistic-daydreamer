@@ -4,10 +4,8 @@ description: A new start
 date: 2021-09-06
 slug: more-effective-cpp/basics
 image: img/2021/09/Ruskeala.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## Distinguish between pointers and references

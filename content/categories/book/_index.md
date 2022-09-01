@@ -1,6 +1,6 @@
 ---
-title: book
-description: Book recommend section
+title: Book
+description: 书籍推荐
 slug: book
 image: BulgariaPerseids.jpg
 style:

@@ -1,6 +1,6 @@
 ---
-title: health
-description: Stay Gold
+title: Health
+description: 健康相关主题
 slug: health
 image: DolbadarnCastle.jpg
 style:

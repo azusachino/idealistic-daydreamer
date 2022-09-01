@@ -4,10 +4,8 @@ description: 菜
 date: 2021-04-30
 slug: setup-blog
 image: img/2021/04/Porcini.jpg
-categories:
-  - exp
-tags:
-  - hugo
+categories: [Exp]
+tags: [Exp, Hugo]
 ---
 
 首先说明一点，我的域名是在腾讯云购入的，采用了 DNSPod 进行解析，SSL 证书申请了免费版本。

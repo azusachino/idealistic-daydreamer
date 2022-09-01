@@ -4,10 +4,8 @@ description: 一切皆有代价
 date: 2021-07-27
 slug: effective-cpp/construct-destruct-assign
 image: img/2021/07/GCVenice.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## 了解 C++默默编写并调用哪些函数

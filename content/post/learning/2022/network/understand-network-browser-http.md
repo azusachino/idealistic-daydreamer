@@ -4,10 +4,8 @@ description: 探索浏览器内部
 date: 2022-02-07
 slug: understand-network-browser-http
 image: img/2022/02/SaCalobra.jpg
-categories:
-  - learning
-tags:
-  - network
+categories: [Learning]
+tags: [Learning, CS, Network]
 ---
 
 通过与浏览器进行简单的交互，学习网络相关的基础知识点。

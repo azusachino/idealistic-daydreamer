@@ -4,10 +4,8 @@ description: Get start with Rust
 date: 2021-12-15
 slug: rust-first-sight
 image: img/2021/12/LittleBirds.jpg
-categories:
-  - learning
-tags:
-  - rust
+categories: [Learning]
+tags: [Learning, Rust]
 ---
 
 Learned from [official book](https://doc.rust-lang.org/book). One simple advice, **Check the source code**, there are a lot of usage examples and explanation.

@@ -1,6 +1,6 @@
 ---
-title: week-report
-description: One week of my life
+title: WeekReport
+description: 一周总结
 slug: week-report
 image: MatunuskaGlacier.jpg
 style:

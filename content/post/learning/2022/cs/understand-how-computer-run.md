@@ -4,10 +4,8 @@ description: The basic of computer science
 date: 2022-02-03
 slug: understand-how-computer-run
 image: img/2022/02/WinterHalo.jpg
-categories:
-  - learning
-tags:
-  - cs
+categories: [Learning]
+tags: [Learning, CS]
 ---
 
 ## 计算机的三大原则

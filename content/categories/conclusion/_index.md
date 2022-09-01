@@ -1,6 +1,6 @@
 ---
-title: conclusion
-description: Learning with conclusions (in general)
+title: Conclusion
+description: 学习总结
 slug: conclusion
 image: HallwylfjelletSunset.jpg
 style:

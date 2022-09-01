@@ -4,10 +4,8 @@ description: 小心对待一切资源
 date: 2021-08-17
 slug: effective-cpp/resource-management
 image: img/2021/08/FlintstoneHouse.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## Use object to manage resources

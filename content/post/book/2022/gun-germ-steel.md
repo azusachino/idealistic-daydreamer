@@ -4,10 +4,8 @@ description: You have to know why history is that way
 date: 2022-02-21
 slug: gun-germ-steel
 image: book/2022/ggs.jpg
-categories:
-  - book
-tags:
-  - book
+categories: [Book]
+tags: [Book, Society]
 ---
 
 ## 最初的疑问

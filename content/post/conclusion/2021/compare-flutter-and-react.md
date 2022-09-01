@@ -4,11 +4,8 @@ description: 世上本没有那么多技术，场景多了，技术也多了
 date: 2021-06-05
 slug: compare-flutter-and-react
 image: img/2021/06/HowgillFells.jpg
-categories:
-  - conclusion
-tags:
-  - react
-  - flutter
+categories: [Conclusion]
+tags: [Conclusion, React, Flutter]
 ---
 
 - [iris-flutter](https://github.com/AzusaChino/iris-flutter)，一个用 Flutter 写的记录东西的 APP

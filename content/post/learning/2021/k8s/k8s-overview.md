@@ -4,11 +4,8 @@ description: The general overview from official document
 date: 2021-07-29
 slug: k8s/overview
 image: img/2021/07/MassachusettsHumpbacks.jpg
-categories:
-  - learning
-tags:
-  - kubernetes
-  - k8s
+categories: [Learning]
+tags: [Learning, Kubernetes, K8S]
 ---
 
 我的 **K8S 学习之旅** 02 [v1.21]

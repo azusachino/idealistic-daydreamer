@@ -4,12 +4,8 @@ description: Order is important
 date: 2022-05-24
 slug: spring-cloud-gateway
 image: img/2022/05/GlassBridge.jpg
-categories:
-  - exp
-tags:
-  - java
-  - spring
-  - webflux
+categories: [Exp]
+tags: [Exp, Java, Spring]
 ---
 
 论如何在单个 Web 项目中集成 Spring Cloud Gateway 的业务逻辑.

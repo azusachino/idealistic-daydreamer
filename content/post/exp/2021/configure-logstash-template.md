@@ -4,10 +4,8 @@ description: Understand template, Understand how elasticsearch works
 date: 2021-06-03
 slug: configure-logstash-template
 image: img/2021/06/AsianElephants.jpg
-categories:
-  - exp
-tags:
-  - logstash
+categories: [Exp]
+tags: [Exp, Logstash]
 ---
 
 在最近联调的过程中，发现日志跑通整个链路的速度变得越来越慢，甚至延迟了几分钟才能在 Kibana 看到采集的日志信息，于是这几天花了很多时间排查问题。

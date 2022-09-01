@@ -4,13 +4,8 @@ description: Yet another learning record
 date: 2022-02-17
 slug: spring-webflux-websocket
 image: img/2022/02/Oymyakon.jpg
-categories:
-  - exp
-tags:
-  - java
-  - spring
-  - webflux
-  - websocket
+categories: [Exp]
+tags: [Exp, Java, Spring, WebSocket]
 ---
 
 由于项目中需要用到 `WebSocket`，而之前一直没接触过，于是这是学习 `WebSocket` 相关使用方式的内容。【不涉及协议等底层知识点】

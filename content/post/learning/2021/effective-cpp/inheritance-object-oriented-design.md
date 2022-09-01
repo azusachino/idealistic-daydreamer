@@ -4,10 +4,8 @@ description: Is-a & Has-a
 date: 2021-09-02
 slug: effective-cpp/oop
 image: img/2021/09/DjurdjevicaBridge.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## Make sure public inheritance models "is-a"

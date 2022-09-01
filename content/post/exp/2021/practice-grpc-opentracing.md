@@ -4,11 +4,8 @@ description: I thought this would be easy
 date: 2021-09-16
 slug: practice-grpc-opentracing
 image: img/2021/09/PetitMinou.jpg
-categories:
-  - exp
-tags:
-  - grpc
-  - opentracing
+categories: [Exp]
+tags: [Exp, Grpc, OpenTracing]
 ---
 
 Recently, I spent a lot of time on playing with `opentracing`, so here are some practical samples. `go` codes is [here](https://github.com/AzusaChino/ficus).

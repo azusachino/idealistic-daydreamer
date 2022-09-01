@@ -4,11 +4,8 @@ description: 唯有套路得人心
 date: 2021-06-01
 slug: compare-go-and-node
 image: img/2021/06/Aldeyjarfoss.jpg
-categories:
-  - conclusion
-tags:
-  - go
-  - node
+categories: [Conclusion]
+tags: [Conclusion, Go, Node]
 ---
 
 5 月份的时候，整了几个小项目出来，其中包括用 Go 和 Node 写的两个后台。现在，回过头看看，发现后台代码都很套路，不外乎配置路由、使用中间件，所以这里做一点总结。
