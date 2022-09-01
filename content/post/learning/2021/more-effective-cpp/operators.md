@@ -4,10 +4,8 @@ description: Do your work
 date: 2021-10-08
 slug: more-effective-cpp/operators
 image: img/2021/10/RedRoofTile.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## Be wary of user-defined conversion functions

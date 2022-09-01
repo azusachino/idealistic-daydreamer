@@ -4,10 +4,8 @@ description: 十分有趣，推荐~
 date: 2021-05-07
 slug: plato-and-platypus
 image: book/2021/plato-and-platypus.jpg
-categories:
-  - book
-tags:
-  - book
+categories: [Book]
+tags: [Book, Philosophy]
 ---
 
 ## 一些哲学理念(Joke)

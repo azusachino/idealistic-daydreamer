@@ -4,11 +4,8 @@ description: Top to Bottom
 date: 2021-08-16
 slug: k8s/architecture
 image: img/2021/08/SanJuanIslands.jpg
-categories:
-  - learning
-tags:
-  - kubernetes
-  - k8s
+categories: [Learning]
+tags: [Learning, Kubernetes, K8S]
 ---
 
 我的 **K8S 学习之旅** 03 [v1.22]

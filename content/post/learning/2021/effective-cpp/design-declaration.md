@@ -4,10 +4,8 @@ description: 好的设计、好的开始
 date: 2021-08-21
 slug: effective-cpp/design-declaration
 image: img/2021/08/HippieTown.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## Make interfaces easy to ues correctly and hard to use incorrectly

@@ -4,12 +4,8 @@ description: The very first sight
 date: 2021-07-13
 slug: k8s/first-sight
 image: img/2021/07/Riou.jpg
-categories:
-  - learning
-tags:
-  - kubernetes
-  - k8s
-  - minikube
+categories: [Learning]
+tags: [Learning, Kubernetes, K8S]
 ---
 
 我的 **K8S 学习之旅** 01 [v1.21]

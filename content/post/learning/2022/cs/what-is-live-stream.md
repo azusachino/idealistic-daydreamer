@@ -4,10 +4,8 @@ description: 云直播服务商的竞争点是精细化的场景划分；那么�
 date: 2022-02-21
 slug: what-is-live-stream
 image: img/2022/02/MaldivesHeart.jpg
-categories:
-  - learning
-tags:
-  - cs
+categories: [Learning]
+tags: [Learning, CS, LiveStream]
 ---
 
 ## [Wiki](https://en.wikipedia.org/wiki/Livestreaming) Definition

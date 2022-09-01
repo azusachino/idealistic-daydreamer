@@ -1,16 +1,11 @@
 ---
 title: Run Mysql on Minikube
-description: 一开始以为很简单...
+description: 一开始以为很简单
 date: 2021-08-31
 slug: practice-minikube-with-mysql
 image: img/2021/08/VeniceBeach.jpg
-categories:
-  - practice
-tags:
-  - kubernetes
-  - k8s
-  - minikube
-  - mysql
+categories: [Practice]
+tags: [Practice, Kubernetes, K8S, MySQL]
 ---
 
 ## Define credentials -> mysql-secret.yml

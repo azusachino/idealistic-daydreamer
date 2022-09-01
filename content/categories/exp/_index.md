@@ -1,6 +1,6 @@
 ---
-title: exp
-description: Learning with experiences (in practice)
+title: Exp
+description: 工作中的经验教训
 slug: exp
 image: LakePukaki.jpg
 style:

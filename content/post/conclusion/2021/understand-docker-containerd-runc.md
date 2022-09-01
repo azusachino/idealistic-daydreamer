@@ -4,12 +4,8 @@ description: From high level to low level
 date: 2021-12-26
 slug: understand-docker-containerd-runc
 image: img/2021/12/SiberianSunset.jpg
-categories:
-  - conclusion
-tags:
-  - docker
-  - containerd
-  - runc
+categories: [Conclusion]
+tags: [Conclusion, Docker, Runc]
 ---
 
 From the graph below, I think everyone could gain a good understanding about container-relate stuffs. Thanks tutorial works, please check reference.

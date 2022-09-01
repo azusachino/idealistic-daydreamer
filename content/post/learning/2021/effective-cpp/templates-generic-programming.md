@@ -4,10 +4,8 @@ description: templates & generics
 date: 2021-08-31
 slug: effective-cpp/templates-generics
 image: img/2021/08/SeaSwallow.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## Understand implicit interfaces and compile-time polymorphism

@@ -4,10 +4,8 @@ description: The standpoint of rootless container
 date: 2022-01-26
 slug: linux-command-unshare-manual
 image: img/2022/01/MeotoIwa.jpg
-categories:
-  - learning
-tags:
-  - linux
+categories: [Learning]
+tags: [Learning, Linux]
 ---
 
 ## Definition

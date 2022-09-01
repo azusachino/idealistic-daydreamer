@@ -4,10 +4,8 @@ description: 整整三天啊，太菜了。
 date: 2021-04-29
 slug: practice-pxc-cluster
 image: img/2021/04/VeniceBeach.jpg
-categories:
-  - exp
-tags:
-  - mysql
+categories: [Exp]
+tags: [Exp, MySQL]
 ---
 
 ## 常用的两种方案

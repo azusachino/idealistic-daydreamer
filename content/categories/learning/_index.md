@@ -1,6 +1,6 @@
 ---
-title: learning
-description: My learning progress
+title: Learning
+description: 学习内容
 slug: learning
 image: TrilliumLake.jpg
 style:

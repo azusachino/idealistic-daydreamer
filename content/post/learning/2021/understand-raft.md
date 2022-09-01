@@ -4,10 +4,8 @@ description: The generally accepted Consensus Algorithm
 date: 2021-10-08
 slug: understand-raft
 image: img/2021/10/MackenzieRiver.jpg
-categories:
-  - learning
-tags:
-  - raft
+categories: [Learning]
+tags: [Learning, Raft]
 ---
 
 First of all, I have to admit that I didn't know `raft` quite well, and this _article_ will only stand as a learning record, thanks for your understanding.

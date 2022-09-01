@@ -4,10 +4,8 @@ description: The Incomplete Solitude
 date: 2022-07-02
 slug: 2022-mid-term
 image: img/2022/07/Vulpes.jpg
-categories:
-  - life
-tags:
-  - conclusion
+categories: [Life]
+tags: [Life, Conclusion]
 ---
 
 富有「变化」的六个月，也算是在践行「体验生活」的基本理念吧。

@@ -4,10 +4,8 @@ description: 娱乐也要适可而止
 date: 2021-07-29
 slug: amusing-ourselves-to-death
 image: book/2021/amusing-ourselves-to-death.jpg
-categories:
-  - book
-tags:
-  - book
+categories: [Book]
+tags: [Book, Society]
 ---
 
 本书的封面是没有"脑袋"的一家四口观看电视的模样，对此你作何感想？

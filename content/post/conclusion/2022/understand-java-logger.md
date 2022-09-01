@@ -1,26 +1,17 @@
 ---
-title: Understand Java Logger (hopefully)
-description: 世上本没有那么多技术，场景多了，技术也多了
+title: 聊聊 Spring 中的 Logger
+description: 代理模式的范式
 date: 2022-01-11
 slug: understand-java-logger
 image: img/2022/01/SnowBuntings.jpg
+mermaid: true
 categories:
-  - conclusion
+  - Conclusion
 tags:
-  - java
+  - Java
 ---
 
-在处理客户端日志文件的过程中，出现了在 ElasticSearch 中的数据在同一毫秒级的情况下无法区分数据的问题。通过在网络上查询资料，最终采用秒级时间戳 + 文件内 offset 的方式进行联合排序。(其中 offset 由 filebeat 统一生成)
-
-## 业务逻辑调整
-
-### Old
-
-通过 http 上传日志文件 -> http-nio 线程异步读取文件内容 -> 解压保存至指定目录 -> 异步线程按行读取 -> 逐一发送至 kafka。
-
-### New
-
-通过 http 上传日志文件 -> http-nio 线程异步读取文件内容 -> 在内存中解压，按行读取 -> 通过 Logger 输出到指定路径 -> filebeat 采集输出到 redis。
+由于工作中遇到了需要自定义日志打印的场景，所以针对 Spring 中常用的 slf4j 日志库进行了大致的学习；以下即是学习成果。
 
 ## Logger 实现原理
 
@@ -89,7 +80,93 @@ public final class Logger implements org.slf4j.Logger, LocationAwareLogger, Appe
 }
 ```
 
+## Logback 配置文件详解
+
+{{<mermaid>}}
+flowchart LR
+configuration --- appender
+configuration --- logger
+configuration --- root
+{{</mermaid>}}
+
+### configuration
+
+### appender
+
+encoder 负责两件事情：把日志信息转换成字节数组，把字节数组写入到输出流
+
+### logger
+
+### root
+
+ROOT 是所有 Logger 的父节点，
+
 ## 参考文件 logback-spring.xml
+
+### 普通 PatternLayoutEncoder
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+
+    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
+    <property name="LOG_HOME" value="logs" />
+    <property name="APP_NAME" defaultValue="spring.application.name"/>
+
+    <!--控制台日志， 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度,%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--文件日志， 按照每天生成日志文件 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名-->
+            <FileNamePattern>${LOG_HOME}/TestWeb.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+        <!--日志文件最大的大小-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>10MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <!-- show parameters for hibernate sql 专为 Hibernate 定制 -->
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE" />
+    <logger name="org.hibernate.type.descriptor.sql.BasicExtractor" level="DEBUG" />
+    <logger name="org.hibernate.SQL" level="DEBUG" />
+    <logger name="org.hibernate.engine.QueryParameters" level="DEBUG" />
+    <logger name="org.hibernate.engine.query.HQLQueryPlan" level="DEBUG" />
+
+    <!--myibatis log configure-->
+    <logger name="com.apache.ibatis" level="TRACE" />
+    <logger name="java.sql.Connection" level="DEBUG" />
+    <logger name="java.sql.Statement" level="DEBUG" />
+    <logger name="java.sql.PreparedStatement" level="DEBUG" />
+
+    <!-- 日志输出级别 -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
+```
+
+### LoggingEventCompositeJsonEncoder
+
+- appName
+- pid
+- line (消耗性能)
+- stack trace (跨行输出，需要搭配 filebeat + grok)
+- method
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -128,7 +205,7 @@ public final class Logger implements org.slf4j.Logger, LocationAwareLogger, Appe
             <maxHistory>3</maxHistory>
             <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
-        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder"><!-- 必须指定，否则不会往文件输出内容 -->
+        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
                 <pattern>
                     <pattern>
@@ -160,6 +237,7 @@ public final class Logger implements org.slf4j.Logger, LocationAwareLogger, Appe
 </configuration>
 ```
 
-## 最后
+## Reference
 
-我差不多明白了，你呢。如果有不懂的地方，欢迎一起沟通交流。
+- [logback 配置文件---logback.xml 详解](https://www.cnblogs.com/gavincoder/p/10091757.html)
+- [logback pattern 配置及详解](https://blog.csdn.net/snail_bi/article/details/103496697)

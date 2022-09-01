@@ -4,10 +4,8 @@ description: 要是没有css，前端的门槛也不会那么高
 date: 2021-05-30
 slug: practice-react
 image: img/2021/05/BirnbeckPier.jpg
-categories:
-  - exp
-tags:
-  - react
+categories: [Exp]
+tags: [Exp, React]
 ---
 
 一直对前端都比较感兴趣，虽然有在学，但是既不系统化，也没有产生什么实际的作用。然后，某一天，在 YTB 上看到大佬在一周内学会了 React 并开发出了一个博客项目，感慨颇深。

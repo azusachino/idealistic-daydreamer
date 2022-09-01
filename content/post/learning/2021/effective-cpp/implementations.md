@@ -4,10 +4,8 @@ description: 好的代码，效率至上
 date: 2021-08-25
 slug: effective-cpp/implementations
 image: img/2021/08/HowgillFells.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 ## Postpone variable definitions as long as possible

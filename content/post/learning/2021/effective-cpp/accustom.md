@@ -4,10 +4,8 @@ description: 半路出家的，读一遍完全不够啊
 date: 2021-07-13
 slug: effective-cpp/accustom
 image: img/2021/07/JaneAusten.jpg
-categories:
-  - learning
-tags:
-  - c++
+categories: [Learning]
+tags: [Learning, Cpp]
 ---
 
 首先: **让自己习惯 C++**

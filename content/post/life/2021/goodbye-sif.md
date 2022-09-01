@@ -4,10 +4,8 @@ description: It's time to let go
 date: 2021-12-27
 slug: goodbye-sif
 image: img/2021/12/sif-main.jpg
-categories:
-  - life
-tags:
-  - life
+categories: [Life]
+tags: [Life, Game]
 ---
 
 **每天早上签到打歌的日子，大概就这样一去不复返了。**

@@ -1,6 +1,6 @@
 ---
-title: practice
-description: Tryout stuffs
+title: Practice
+description: 尝试做的一些事情
 slug: practice
 image: Cahuita.jpg
 style:
