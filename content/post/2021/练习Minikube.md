@@ -1,6 +1,6 @@
 ---
-title: Run Mysql on Minikube
-description: 一开始以为很简单
+title: 练习 Minikube
+description: 最简单的 k8s 集群方案
 date: 2021-08-31
 slug: practice-minikube-with-mysql
 image: img/2021/08/VeniceBeach.jpg

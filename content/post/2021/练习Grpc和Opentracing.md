@@ -1,6 +1,6 @@
 ---
-title: Practice gRPC with opentracing
-description: I thought this would be easy
+title: 练习 gRPC，opentracing
+description: Golang 的一次小练习
 date: 2021-09-16
 slug: practice-grpc-opentracing
 image: img/2021/09/PetitMinou.jpg

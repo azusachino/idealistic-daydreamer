@@ -1,6 +1,6 @@
 ---
-title: React 简单实践
-description: 要是没有css，前端的门槛也不会那么高
+title: 练习 React
+description: React的学习可能就到此为止了
 date: 2021-05-30
 slug: practice-react
 image: img/2021/05/BirnbeckPier.jpg

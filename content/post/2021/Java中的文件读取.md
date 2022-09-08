@@ -1,6 +1,6 @@
 ---
-title: Java读取文件的几种方式
-description: 最终还是怎么方便，怎么来
+title: Java 中的文件读取方式总结
+description: 效率与便捷之间的对决
 date: 2021-05-31
 slug: java-file-reading
 image: img/2021/05/HouseboatKerala.jpg

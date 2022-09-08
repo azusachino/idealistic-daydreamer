@@ -1,5 +1,5 @@
 ---
-title: 关于 LogStash 的一些小结
+title: Logstash 使用总结
 description: 一直在学，却总是学不会
 date: 2021-05-29
 slug: logstash-basic-usage

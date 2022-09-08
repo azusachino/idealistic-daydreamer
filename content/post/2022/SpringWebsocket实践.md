@@ -1,8 +1,8 @@
 ---
-title: Use WebSocket with WebFlux
-description: Yet another learning record
+title: 实践 Spring Webflux Websocket
+description: 高性能的 Websocket 方案
 date: 2022-02-17
-slug: spring-webflux-websocket
+slug: practice-spring-webflux-websocket
 image: img/2022/02/Oymyakon.jpg
 categories: [Exp]
 tags: [Exp, Java, Spring, WebSocket]

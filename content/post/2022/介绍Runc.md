@@ -1,8 +1,8 @@
 ---
-title: Brief Introduction about runc
-description: My current status of learning Containerization
+title: Runc 初探
+description: 容器化的基石
 date: 2022-01-16
-slug: introduction-runc
+slug: runc-intro
 image: img/2022/01/KjellHenriksen.jpg
 categories: [Conclusion]
 tags: [Conclusion, Runc]

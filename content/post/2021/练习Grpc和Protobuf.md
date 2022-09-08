@@ -1,6 +1,6 @@
 ---
-title: Practice Protobuf
-description: 我懂了(完全没懂)
+title: 练习 gRPC，Protobuf
+description: 高效率的序列化方案
 date: 2021-09-13
 slug: practice-grpc-protobuf
 image: img/2021/09/WalhallaOverlook.jpg

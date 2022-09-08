@@ -1,5 +1,5 @@
 ---
-title: React和Flutter的相似之处
+title: 对比 React，Flutter
 description: 世上本没有那么多技术，场景多了，技术也多了
 date: 2021-06-05
 slug: compare-flutter-and-react

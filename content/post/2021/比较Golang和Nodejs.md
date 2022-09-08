@@ -1,5 +1,5 @@
 ---
-title: Golang和Nodejs的相似之处
+title: 对比 Golang，Nodejs
 description: 唯有套路得人心
 date: 2021-06-01
 slug: compare-go-and-node

@@ -1,6 +1,6 @@
 ---
-title: Understand Docker, Containerd, RunC
-description: From high level to low level
+title: 了解 Docker, Containerd, RunC
+description: 自顶向下
 date: 2021-12-26
 slug: understand-docker-containerd-runc
 image: img/2021/12/SiberianSunset.jpg

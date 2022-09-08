@@ -1,8 +1,8 @@
 ---
-title: 入门 Rust
-description: 开始学习 Rust
+title: Rust 入门
+description: 又一门我不太能用上的语言
 date: 2021-12-15
-slug: rust-first-sight
+slug: rust-intro
 image: img/2021/12/LittleBirds.jpg
 categories: [Learning]
 tags: [Learning, Rust]

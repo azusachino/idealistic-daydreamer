@@ -1,8 +1,8 @@
 ---
-title: Understand Raft
-description: The generally accepted Consensus Algorithm
+title: Raft 入门
+description: 最热门的共识算法之一
 date: 2021-10-08
-slug: understand-raft
+slug: raft-intro
 image: img/2021/10/MackenzieRiver.jpg
 categories: [Learning]
 tags: [Learning, Raft]

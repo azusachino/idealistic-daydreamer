@@ -1,5 +1,5 @@
 ---
-title: 聊聊 Spring 中的 Logger
+title: 探究 Spring 中 Logger 的实现
 description: 代理模式的范式
 date: 2022-01-11
 slug: understand-java-logger

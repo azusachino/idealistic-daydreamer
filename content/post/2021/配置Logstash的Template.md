@@ -1,6 +1,6 @@
 ---
-title: Logstash配置Template的泥泞之旅
-description: Understand template, Understand how elasticsearch works
+title: 实践 Logstash 中的 Template 功能
+description: 活用 ES 提供的 ILM 功能
 date: 2021-06-03
 slug: configure-logstash-template
 image: img/2021/06/AsianElephants.jpg

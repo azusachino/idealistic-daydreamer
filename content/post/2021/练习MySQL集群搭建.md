@@ -1,6 +1,6 @@
 ---
-title: 记一次 MySQL 集群搭建经历
-description: 整整三天啊，太菜了。
+title: 练习 MySQL 集群搭建
+description: 没有最完善的解决方案
 date: 2021-04-29
 slug: practice-pxc-cluster
 image: img/2021/04/VeniceBeach.jpg

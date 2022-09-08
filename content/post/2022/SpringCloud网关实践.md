@@ -1,8 +1,8 @@
 ---
-title: Spring Cloud Gateway 实践
-description: Order is important
+title: 实践 Spring Cloud Gateway
+description: 顺序很重要
 date: 2022-05-24
-slug: spring-cloud-gateway
+slug: practice-spring-cloud-gateway
 image: img/2022/05/GlassBridge.jpg
 categories: [Exp]
 tags: [Exp, Java, Spring]

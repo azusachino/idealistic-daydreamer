@@ -1,6 +1,6 @@
 ---
 title: 再见了, SIF
-description: It's time to let go
+description: 青春的一页
 date: 2021-12-27
 slug: goodbye-sif
 image: img/2021/12/sif-main.jpg
