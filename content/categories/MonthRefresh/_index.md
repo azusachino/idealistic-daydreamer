@@ -1,7 +1,6 @@
 ---
-title: MonthRefresh
+title: Monthly Refresh
 description: 月度自省
-slug: month-refresh
 image: EstoniaBaltic.jpg
 style:
   background: "#e3cbd8"
