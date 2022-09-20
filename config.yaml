@@ -1,8 +1,8 @@
-baseurl: https://azusachino.cn
+baseurl: http://jiazhiwei.net
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
-title: idealistic daydreamer
+title: zhiwei.jia
 timeout: 10_000
 # Change it to your Disqus shortname before using
 # disqusShortname: azusachino
@@ -39,12 +39,11 @@ params:
     lastUpdated: Jan 02, 2006 15:04 CST
 
   sidebar:
-    emoji: 🎨
-    subtitle: Palette gives you the ability, but you're the possibility.
+    subtitle:  coder never give up
     avatar:
       enabled: true
       local: true
-      src: img/icon.png
+      src: img/icon.jpg
 
   article:
     math: true
@@ -85,7 +84,7 @@ params:
   opengraph:
     twitter:
       # Your Twitter username
-      site: azusachino
+      site: zhwei2_J
 
       # Available values: summary, summary_large_image
       card: summary_large_image
@@ -123,12 +122,12 @@ menu:
   social:
     - identifier: github
       name: GitHub
-      url: https://github.com/azusachino
+      url: https://github.com/a550844389
       params:
         icon: brand-github
     - identifier: twitter
       name: Twitter
-      url: https://twitter.com/azusachino
+      url: https://twitter.com/zhwei2_J
       params:
         icon: brand-twitter
     - identifier: note
