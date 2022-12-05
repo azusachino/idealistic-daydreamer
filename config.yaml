@@ -133,7 +133,7 @@ menu:
         icon: brand-twitter
     - identifier: note
       name: Note
-      url: https://rin.azusachino.cn
+      url: https://record.azusachino.cn
       params:
         icon: link
 
