@@ -14,7 +14,7 @@ tags: [Conclusion, Go, Node]
 
 Go 采用了 Gin 框架，Node 采用了 Express 框架。
 
-地址分别为[iris-backend](https://github.com/AzusaChino/iris-backend) [iris-node](https://github.com/AzusaChino/iris-node)
+地址分别为[iris-backend](https://github.com/azusachino/iris-backend) [iris-node](https://github.com/azusachino/iris-node)
 
 ## 对比 main 入口文件
 

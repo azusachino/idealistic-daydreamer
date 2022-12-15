@@ -1,4 +1,4 @@
-baseurl: https://azusachino.cn
+baseurl: https://azusachino.icu
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
@@ -133,7 +133,7 @@ menu:
         icon: brand-twitter
     - identifier: note
       name: Note
-      url: https://record.azusachino.cn
+      url: https://note.azusachino.icu
       params:
         icon: link
 

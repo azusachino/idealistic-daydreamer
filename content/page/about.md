@@ -50,4 +50,4 @@ The sum of behavior is to retain a man's own dignity without intruding upon othe
 
 ## Extra
 
-A [place](https://rin.azusachino.cn) where I wrote notes.
+A [place](https://note.azusachino.icu) where I wrote notes.

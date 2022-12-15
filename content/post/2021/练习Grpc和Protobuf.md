@@ -45,7 +45,7 @@ syntax = "proto3"; // 指定protobuf版本
 package mall; // 指定默认包名
 
 // 指定生成go文件的包名
-option go_package = "github.com/AzusaChino/grpc_demo/proto";
+option go_package = "github.com/azusachino/grpc_demo/proto";
 
 service MailService {
     rpc SendMail(MailRequest) returns (MailResponse) {
@@ -85,7 +85,7 @@ package main
 import (
     "context"
     "fmt"
-    pb "github.com/AzusaChino/grpc_demo/proto/mail"
+    pb "github.com/azusachino/grpc_demo/proto/mail"
     "google.golang.org/grpc"
     "google.golang.org/grpc/reflection"
     "net"
@@ -128,7 +128,7 @@ package main
 
 import (
     "context"
-    pb "github.com/AzusaChino/grpc_demo/proto/mail"
+    pb "github.com/azusachino/grpc_demo/proto/mail"
     "google.golang.org/grpc"
     "log"
     "testing"

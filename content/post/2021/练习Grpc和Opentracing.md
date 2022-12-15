@@ -8,7 +8,7 @@ categories: [Exp]
 tags: [Exp, Grpc, OpenTracing]
 ---
 
-Recently, I spent a lot of time on playing with `opentracing`, so here are some practical samples. `go` codes is [here](https://github.com/AzusaChino/ficus).
+Recently, I spent a lot of time on playing with `opentracing`, so here are some practical samples. `go` codes is [here](https://github.com/azusachino/ficus).
 
 First of all, I will treat a successful http request as a valid `Span`.
 

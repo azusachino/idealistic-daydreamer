@@ -8,8 +8,8 @@ categories: [Conclusion]
 tags: [Conclusion, React, Flutter]
 ---
 
-- [iris-flutter](https://github.com/AzusaChino/iris-flutter)，一个用 Flutter 写的记录东西的 APP
-- [iris-react](https://github.com/AzusaChino/iris-react)，一个用 React 写的博客
+- [iris-flutter](https://github.com/azusachino/iris-flutter)，一个用 Flutter 写的记录东西的 APP
+- [iris-react](https://github.com/azusachino/iris-react)，一个用 React 写的博客
 
 在写这两个的项目的时候，能够明显感受到两者之间的相似程度，毕竟 Flutter 就是参考 React 开发出来的。
 
@@ -99,7 +99,7 @@ class App extends React.Component {
               <Footer>
                 Iris React ©2021 Built by
                 <a
-                  href="https://azusachino.cn"
+                  href="https://azusachino.icu"
                   target="_blank"
                   rel="noreferrer"
                 >
