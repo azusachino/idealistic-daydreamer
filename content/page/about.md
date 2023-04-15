@@ -1,17 +1,17 @@
 ---
 title: About
 description: 我想要的无非是遵从自己的内心去生活, 为什么竟是如此艰难呢？
-date: "2021-12-31"
+date: 2021-12-31
+lastmod: 2022-06-07
 aliases:
   - about-us
   - about-hugo
   - contact
-lastmod: "2022-06-07"
 menu:
   main:
     weight: -90
     params:
-      icon: user
+      icon: tag
 ---
 
 99% 的理论 + 1% 的实践 = me (idealistic daydreamer)
@@ -47,7 +47,3 @@ The sum of behavior is to retain a man's own dignity without intruding upon othe
 5. 它自由软弱，却把它认为是生命的坚韧
 6. 当它鄙夷一张丑恶的嘴脸时，却不知那正是自己面具中的一副
 7. 它侧身于生活的污泥中虽不甘心，却又畏首畏尾
-
-## Extra
-
-A [place](https://note.azusachino.icu) where I wrote notes.
