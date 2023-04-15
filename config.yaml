@@ -57,11 +57,6 @@ params:
   comments:
     enabled: true
     provider: giscus
-
-    # utterances:
-    #   repo: azusachino/idealistic-daydreamer
-    #   issueTerm: title
-    #   label: comment
     giscus:
       repo: azusachino/idealistic-daydreamer
       repoID: MDEwOlJlcG9zaXRvcnkzNTgxOTk2MjU=
