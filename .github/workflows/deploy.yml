@@ -26,7 +26,7 @@ jobs:
         run: |
           hugo -D
       - name: Deploy to Server # 第四步，rsync推文件
-        uses: AEnterprise/rsync-deploy@v1.0 # 使用别人包装好的步骤镜像
+        uses: azusachino/rsync-deploy@v1.0.2 # 使用别人包装好的步骤镜像
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }} # 引用配置，SSH私钥
           ARGS: -avz --delete --exclude='*.pyc' # rsync参数，排除.pyc文件
